@@ -57,7 +57,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 				u8 hmac[0x20];
 				memset(param, 0, sizeof(param));
 				memset(hmac, 0, sizeof(hmac));
-				APT_PrepareToDoApplicationJump(0, GameManagement::installedTitles[selection]->ID(), MEDIATYPE_SD);
+				APT_PrepareToDoApplicationJump(0, GameManagement::installedTitles[Selection]->ID(), MEDIATYPE_SD);
 				APT_DoApplicationJump(param, sizeof(param), hmac);
 			}
 		}
