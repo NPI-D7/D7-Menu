@@ -6,6 +6,11 @@
 extern bool touching(touchPosition touch, Structs::ButtonPos button);
 extern bool exiting;
 
+SDMenu::SDMenu() {
+	
+	maxTitles = (int)GameManagement::installedTitles.size();
+}
+
 void SDMenu::Draw(void) const {
 	GFX::DrawTop();
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu-> SDMenu", 400);
