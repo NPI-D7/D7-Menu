@@ -17,6 +17,8 @@ void SDMenu::Draw(void) const {
         Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 255));
 	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, GameManagement::installedTitles[Selection]->name());
 	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, GameManagement::installedTitles[Selection]->Author());
+        Gui::DrawString(397-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 237-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
+
 
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	GFX::DrawBottom();
