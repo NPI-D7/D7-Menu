@@ -29,6 +29,9 @@ private:
                 {68, 40, 48, 48},
                 {68, 100, 48, 48},
                 {68, 160, 48, 48},
+                {126, 40, 48, 48},
+                {126, 100, 48, 48},
+                {126, 160, 48, 48},
        
 	};
     std::shared_ptr<TitleManagement> titleFromIndex(int i) const
