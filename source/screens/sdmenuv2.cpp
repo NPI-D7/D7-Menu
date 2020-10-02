@@ -9,6 +9,10 @@ extern bool exiting;
 void SDMenu::Draw(void) const {
 	GFX::DrawTop();
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu-> SDMenu", 400);
+        Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 255));
+	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, GameManagement::installedTitles[selectedTitle]->name());
+	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, GameManagement::installedTitles[selectedTitle]->Author());
+
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	GFX::DrawBottom();
 
