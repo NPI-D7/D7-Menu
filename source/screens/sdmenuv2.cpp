@@ -15,11 +15,11 @@ void SDMenu::Draw(void) const {
 	// Draw Buttons. ;P
 	for (int i = 0; i < (int)this->mainButtons.size(); i++) {
 		if (this->Selection == i) {
-			C2D_DrawImageAt(GameManagement::installedTitles[mainButtons[i]]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+			C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
 			Gui::Draw_Rect(mainButtons[i].x+0, mainButtons[i].y+0, 51, 51, WHITE);
 		}
 		else {
-				C2D_DrawImageAt(GameManagement::installedTitles[mainButtons[i]]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+				C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
 		}
 	}
 
