@@ -26,6 +26,9 @@ private:
 		{10, 40, 48, 48}, // Button 1.
 		{10, 100, 48, 48}, // Button 2.
 		{10, 160, 48, 48}, // Button 3.
+                {68, 40, 48, 48},
+                {68, 100, 48, 48},
+                {68, 160, 48, 48},
        
 	};
     std::shared_ptr<TitleManagement> titleFromIndex(int i) const
