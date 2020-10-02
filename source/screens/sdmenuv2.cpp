@@ -82,6 +82,9 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
         if (hDown & KEY_RIGHT) {
 		if (this->Selection < (int)this->mainButtons.size() - 1)	this->Selection+= 3;
 	}
+        if (hDown & KEY_LEFT) {
+		if (this->Selection > 0 	this->Selection-= 3;
+	}
 
 	// Press Up to go one entry up.
 	if (hDown & KEY_UP) {
