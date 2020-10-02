@@ -49,13 +49,18 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	}
 
 	// Press <A> on a Button to enter example screen.
-	if (hDown & KEY_A) {
-		if (this->Selection == 0) {
-			
-		} else if (this->Selection == 1) {
-			
+	
+
+        if (hDown & KEY_A) {
+			if (!GameManagement::installedTitles.empty()) {
+				u8 param[0x300];
+				u8 hmac[0x20];
+				memset(param, 0, sizeof(param));
+				memset(hmac, 0, sizeof(hmac));
+				APT_PrepareToDoApplicationJump(0, GameManagement::installedTitles[selection]->ID(), MEDIATYPE_SD);
+				APT_DoApplicationJump(param, sizeof(param), hmac);
+			}
 		}
-	}
 
 	// Touch the button to enter example screen.
 	if (hDown & KEY_TOUCH) {
