@@ -80,16 +80,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		}
 
 	// Touch the button to enter example screen.
-	if (hDown & KEY_TOUCH) {
-		if (!GameManagement::installedTitles.empty()) {
-				u8 param[0x300];
-				u8 hmac[0x20];
-				memset(param, 0, sizeof(param));
-				memset(hmac, 0, sizeof(hmac));
-				APT_PrepareToDoApplicationJump(0, GameManagement::installedTitles[Selection]->ID(), MEDIATYPE_SD);
-				APT_DoApplicationJump(param, sizeof(param), hmac);
-			}
-	}
+	
 
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
 	if (hDown & KEY_DOWN) {
