@@ -95,6 +95,6 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 
 	// Press Up to go one entry up.
 	if (hDown & KEY_UP) {
-		if (this->Selection > 5)	this->Selection-= 5;
+		if (this->Selection > 4)	this->Selection-= 5;
 	}
 }
