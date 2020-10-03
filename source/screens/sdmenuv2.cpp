@@ -58,6 +58,12 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		fadeout = true;
 		exiting = true;
 	}
+        if (hDown & KEY_R){
+         
+        Gui::setScreen(std::make_unique<MainMenu>(), true, false);
+
+
+        }
 
 	// Press <A> on a Button to enter example screen.
 	
@@ -75,11 +81,14 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 
 	// Touch the button to enter example screen.
 	if (hDown & KEY_TOUCH) {
-		if (touching(touch, this->mainButtons[0])) {
-			Gui::setScreen(std::make_unique<MainMenu>(), true, false);
-		} else if (touching(touch, this->mainButtons[1])) {
-			
-		}
+		if (!GameManagement::installedTitles.empty()) {
+				u8 param[0x300];
+				u8 hmac[0x20];
+				memset(param, 0, sizeof(param));
+				memset(hmac, 0, sizeof(hmac));
+				APT_PrepareToDoApplicationJump(0, GameManagement::installedTitles[Selection]->ID(), MEDIATYPE_SD);
+				APT_DoApplicationJump(param, sizeof(param), hmac);
+			}
 	}
 
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
