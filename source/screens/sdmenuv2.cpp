@@ -61,14 +61,17 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		fadeout = true;
 		exiting = true;
 	}
-	GFX::DrawTop();
+		if (hDown & KEY_SELECT){
+
+		
+		GFX::DrawTopSP();
 		Gui::DrawString(1, 30, 0.8f, WHITE, "\uE000: Start");
 		Gui::DrawString(1, 60, 0.8f, WHITE, "\uE006: Navigate");
 		
 		
-		Gui::DrawString(1, 150, 0.8f, WHITE, "Press \uE002 to go to MainMenu");
+		Gui::DrawString(1, 90, 0.8f, WHITE, "Press \uE002 to go to MainMenu");
 
-		Gui::DrawString(1, 180, 0.8f, WHITE, "Press \uE045 to exit!");
+		Gui::DrawString(1, 120, 0.8f, WHITE, "Press \uE045 to exit!");
         if (hDown & KEY_X){
          
         Gui::setScreen(std::make_unique<MainMenu>(), true, false);

@@ -86,6 +86,18 @@ void GFX::DrawFileBrowseBG(bool isTop) {
 		Gui::Draw_Rect(0, 213, 320, 27, C2D_Color32(0, 160, 210, 255));
 	}
 }
+void GFX::DrawTopSP(){
+	Gui::ScreenDraw(Top);
+	
+	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 50));
+	
+}
+void GFX::DrawBottomSP(){
+	Gui::ScreenDraw(Bottom);
+	
+	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 50));
+		
+}
 
 void GFX::DrawBetteryTop(){
 	u8 batteryChargeState = 0;
