@@ -61,7 +61,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		fadeout = true;
 		exiting = true;
 	}
-		if (hDown & KEY_SELECT){
+	if (hDown & KEY_SELECT) {
 
 		
 		GFX::DrawTopSP();
@@ -77,7 +77,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
         Gui::setScreen(std::make_unique<MainMenu>(), true, false);
 
 
-        }
+    }
 
 	// Press <A> on a Button to enter example screen.
 	
