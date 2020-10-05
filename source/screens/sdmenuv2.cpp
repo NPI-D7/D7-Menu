@@ -2,6 +2,7 @@
 #include "sdmenuv2.hpp"
 #include "mainMenu.hpp"
 #include "gameManagement.hpp"
+#include  "utils.hpp"
 
 extern bool touching(touchPosition touch, Structs::ButtonPos button);
 extern bool exiting;
@@ -13,6 +14,8 @@ SDMenu::SDMenu() {
 
 void SDMenu::Draw(void) const {
 	GFX::DrawTop();
+	GFX::DrawBetteryTop();
+	Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu-> SDMenu", 400);
         Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 255));
 	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, GameManagement::installedTitles[Selection]->name());
@@ -58,7 +61,15 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		fadeout = true;
 		exiting = true;
 	}
-        if (hDown & KEY_R){
+	GFX::DrawTop();
+		Gui::DrawString(1, 30, 0.8f, WHITE, "\uE000: Start");
+		Gui::DrawString(1, 60, 0.8f, WHITE, "\uE006: Navigate");
+		
+		
+		Gui::DrawString(1, 150, 0.8f, WHITE, "Press \uE002 to go to MainMenu");
+
+		Gui::DrawString(1, 180, 0.8f, WHITE, "Press \uE045 to exit!");
+        if (hDown & KEY_X){
          
         Gui::setScreen(std::make_unique<MainMenu>(), true, false);
 
