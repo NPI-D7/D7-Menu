@@ -15,7 +15,7 @@ SDMenu::SDMenu() {
 void SDMenu::Draw(void) const {
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
-	Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
+	//Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu-> SDMenu", 400);
         Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 255));
 	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, GameManagement::installedTitles[Selection]->name());
@@ -62,7 +62,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		exiting = true;
 	}
 
-	if (hDown & KEY_SELECT) {
+	if (hHeld & KEY_SELECT) {
 
 		
 		GFX::DrawTopSP();
@@ -74,7 +74,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 
 		Gui::DrawString(1, 120, 0.8f, WHITE, "Press \uE045 to exit!");
         
-		
+
 
     }
 	if (hDown & KEY_X){
