@@ -89,13 +89,13 @@ void GFX::DrawFileBrowseBG(bool isTop) {
 void GFX::DrawTopSP(){
 	Gui::ScreenDraw(Top);
 	
-	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 50));
+	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 80));
 	
 }
 void GFX::DrawBottomSP(){
 	Gui::ScreenDraw(Bottom);
 	
-	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 50));
+	Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(0, 0, 0, 80));
 		
 }
 
