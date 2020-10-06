@@ -35,7 +35,7 @@
 #include "gamecard.hpp"
 #include "nand.hpp"
 #include "sdmenuv2.hpp"
-
+#include "Decoder.hpp"
 
 #include "msg.hpp"
 
