@@ -114,7 +114,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		if (this->Selection < (int)this->mainButtons.size() - 5)	this->Selection+= 5;
 	}
         if (hDown & KEY_RIGHT) {
-		if (this->Selection < (int)this->mainButtons.size() - 1)	this->Selection++;
+		if (this->Selection < (int)this->maxTitles - 1)	this->Selection++;
 	}
         if (hDown & KEY_LEFT) {
 		if (this->Selection > 0)	this->Selection--;
