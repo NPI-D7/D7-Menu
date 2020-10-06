@@ -77,7 +77,7 @@ endif
 TARGET		:=	D7-Menu
 BUILD		:=	build
 UNIVCORE	:= 	Universal-Core
-MUSIC		:=  music
+
 SOURCES		:=	$(MUSIC) $(UNIVCORE) source source/gui source/screens source/core/management source/utils source/core/management/nand
 DATA		:=	data
 INCLUDES	:= $(MUSIC) $(UNIVCORE) include include/gui include/screens include/core/management include/utils include/core/management/nand
