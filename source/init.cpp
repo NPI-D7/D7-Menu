@@ -41,9 +41,11 @@
 #include <unistd.h>
 #include <iostream>
 #include <vector>
+#include <atomic>
 
 std::vector<std::string> bgm;
 std::unique_ptr<Decoder> decoder;
+std::atomic<bool> playing;
 
 bool exiting = false;
 
@@ -108,7 +110,9 @@ Result Init::Initialize() {
 			}
 		
 			Msg::DisplayMsg("Get Musicfile");
-			Decoder::get(bgm);
+			
+			playing = true;
+			
 
 		}
 
