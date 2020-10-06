@@ -109,16 +109,6 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		Gui::DrawString(1, 90, 0.8f, WHITE, "Press \uE045 to exit!");
 		GFX::DrawBottomSP();
 	}
-	if (hDown & KEY_L){
-
-		Gui::setScreen(std::make_unique<SDMenu>(), true, false);
-		
-		
-	}
-	if (hDown & KEY_R){
-			Gui::setScreen(std::make_unique<gamecard>(), true, false);
-	}
-	
 	if (hDown & KEY_A) {
 		if (this->Selection == 0) {
 			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
