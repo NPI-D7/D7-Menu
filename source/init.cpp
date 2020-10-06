@@ -93,31 +93,10 @@ Result Init::Initialize() {
 	Msg::DisplayMsg("Scanning SD Card...");
 	GameManagement::scanTitleID(); 
 
-	STDirectory dir("/3ds/NPI/music/Test");
-	if (dir.good()){
-
-		for (size_t i=0; i < dir.count(); i++) {
-
-			if (dir.folder(i)){
-
-				auto decoder = Decoder::get("/3ds/NPI/music/Test/" + dir.item(i));
-
-				if (decoder && decoder->good()){
-
-					bgm.emplace_back("/3ds/NPI/music/Test/" + dir.item(i));
-			}
-
-			}
-		
-			Msg::DisplayMsg("Get Musicfile");
-			
-			playing = true;
-			
-
-		}
+	decoder.get(/Faint.mp3);
 
 		
-	}
+	
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
 	return 0;
