@@ -45,6 +45,7 @@
 
 sound *bgm = NULL;
 bool songIsFound = false;
+bool dspFound = false;
 
 
 bool exiting = false;
