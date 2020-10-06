@@ -32,6 +32,7 @@
 #include "ptmu_x.h"
 #include "core/management/gameManagement.hpp"
 #include "colors.hpp"
+#include "Decoder.hpp"
 
 #include <3ds.h>
 #include <algorithm>
@@ -86,6 +87,9 @@ Result Init::Initialize() {
 	//GameManagement::scanTitleID();
 	Msg::DisplayMsg("Scanning SD Card...");
 	GameManagement::scanTitleID(); 
+
+	Msg::DisplayMsg("Get Musicfile");
+	Decoder::get("/3ds/NPI/music/Test/Faint.mp3");
 	
 		// Enable speed-up for New 3DS users
 	// We don't rely on older screens, so set false as the last param here.

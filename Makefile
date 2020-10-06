@@ -78,9 +78,9 @@ TARGET		:=	D7-Menu
 BUILD		:=	build
 UNIVCORE	:= 	Universal-Core
 MUSIC		:=  music
-SOURCES		:=	 $(UNIVCORE) source source/gui source/screens source/core/management source/utils source/core/management/nand
+SOURCES		:=	$(MUSIC) $(UNIVCORE) source source/gui source/screens source/core/management source/utils source/core/management/nand
 DATA		:=	data
-INCLUDES	:= $(UNIVCORE) include include/gui include/screens include/core/management include/utils include/core/management/nand
+INCLUDES	:= $(MUSIC) $(UNIVCORE) include include/gui include/screens include/core/management include/utils include/core/management/nand
 GRAPHICS	:=	assets/gfx
 #GFXBUILD	:=	$(BUILD)
 ROMFS		:=	romfs
@@ -91,6 +91,7 @@ ICON		:=	app/icon.png
 BNR_IMAGE	:=  app/banner.png
 BNR_AUDIO	:=	app/BannerAudio.wav
 RSF_FILE	:=	app/build-cia.rsf
+MUSIC       :=  test test/decoder
 
 #---------------------------------------------------------------------------------
 # options for code generation
