@@ -93,7 +93,7 @@ Result Init::Initialize() {
 	Msg::DisplayMsg("Scanning SD Card...");
 	GameManagement::scanTitleID(); 
 
-	decoder.get(/Faint.mp3);
+	decoder.get("/Faint.mp3");
 
 		
 	
