@@ -32,6 +32,7 @@
 #include "ptmu_x.h"
 #include "core/management/gameManagement.hpp"
 #include "colors.hpp"
+#include "sound.h"
 
 
 #include <3ds.h>
@@ -40,11 +41,11 @@
 #include <unistd.h>
 #include <iostream>
 #include <vector>
-#include <atomic>
 
-std::vector<std::string> bgm;
-std::unique_ptr<Decoder> decoder;
-std::atomic<bool> playing;
+
+sound *bgm = NULL;
+bool songIsFound = false;
+
 
 bool exiting = false;
 
@@ -54,6 +55,27 @@ C2D_SpriteSheet sprites;
 bool touching(touchPosition touch, Structs::ButtonPos button) {
 	if (touch.px >= button.x && touch.px <= (button.x + button.w) && touch.py >= button.y && touch.py <= (button.y + button.h))	return true;
 	else	return false;
+}
+
+void Init::loadSoundEffects(void) {
+	if (dspFound) {
+		if (access("sdmc:/3ds/NPI/music/Test/Figure.wav", F_OK ) != -1) {
+			bgm = new sound("sdmc:/3ds/NPI/music/Test/Figure.wav", 1, true);
+			songIsFound = true;
+		}
+	}
+}
+
+void Init::playMusic(void) {
+	if (songIsFound) {
+		bgm->play();
+	}
+}
+
+void Init::stopMusic(void) {
+	if (songIsFound) {
+		bgm->stop();
+	}
 }
 
 Result Init::Initialize() {
@@ -76,7 +98,8 @@ Result Init::Initialize() {
 	amInit();
 	
 	mkdir("sdmc:/3ds", 0777);
-	mkdir("sdmc:/3ds/HomeMen3D", 0777);
+	mkdir("sdmc:/3ds/NPI", 0777);
+       
 
 	// For battery status
    	//if (R_FAILED(res = ptmuInit())) {
@@ -98,6 +121,12 @@ Result Init::Initialize() {
 	
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
+        if ( access( "sdmc:/3ds/dspfirm.cdc", F_OK ) != -1 ) {
+		ndspInit();
+		dspFound = true;
+		loadSoundEffects();
+		playMusic();
+	}
 	return 0;
 	
 }
