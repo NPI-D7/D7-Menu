@@ -55,8 +55,28 @@ void MainMenu::Draw(void) const {
 	GFX::DrawBetteryTop();
 	Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu->MainMenu", 400);
+
+
+
+
+	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
+		if (this->Selection == i) {
+			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 170, 255));
+		} else {
+			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 100, 255));
+		}
+	}
+	Gui::DrawStringCentered(0, MMButtons[0].y+10, 0.6f, WHITE, "SDCard");
+	Gui::DrawStringCentered(0, MMButtons[1].y+10, 0.6f, WHITE, "GameCard");
+	Gui::DrawStringCentered(0, MMButtons[2].y+10, 0.6f, WHITE, "???");
+
+
+
+
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/
 	
+
+
 	
 	
 
@@ -99,7 +119,41 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 			Gui::setScreen(std::make_unique<gamecard>(), true, false);
 	}
 	
+	if (hDown & KEY_A) {
+		if (this->Selection == 0) {
+			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
+		} else if (this->Selection == 1) {
+			Gui::setScreen(std::make_unique<gamecard>(), true, false);
+		} else if (this->Selection == 2) {
+                        Msg::DisplayMsg("Downloading...");
+                        
+                }
+     
+	}
 
+	// Touch the button to enter example screen.
+	if (hDown & KEY_TOUCH) {
+		if (touching(touch, this->MMButtons[0])) {
+			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
+		} else if (touching(touch, this->MMButtons[1])) {
+			Gui::setScreen(std::make_unique<gamecard>(), true, false);
+		} else if (touching(touch, this->MMButtons[2])) {
+                Msg::DisplayMsg("Downloading...");
+                
+                }
+	}
+     //   if (hDown & KEY_L) {
+      //  Screenshot_Capture();
+      //  }
+	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
+	if (hDown & KEY_DOWN) {
+		if (this->Selection < (int)this->MMButtons.size() - 1)	this->Selection++;
+	}
+
+	// Press Up to go one entry up.
+	if (hDown & KEY_UP) {
+		if (this->Selection > 0)	this->Selection--;
+	}
 	
 
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.

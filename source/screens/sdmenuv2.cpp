@@ -54,7 +54,7 @@ void SDMenu::Draw(void) const {
 	}
 
 	
-
+	Gui::DrawString(37, 214, 0.8f, WHITE, "Hold \uE046 to show controols!");
 		
 		// Installed Title Icon.
 

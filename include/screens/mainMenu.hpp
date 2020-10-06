@@ -43,7 +43,13 @@ public:
 	
 private:
 
-	
+	int Selection = 0;
+	std::vector<Structs::ButtonPos> MMButtons = {
+		{50, 40, 40, 100},
+        {50, 100, 40, 100},
+        {50, 160, 40, 100},
+       
+	};
 	
 };
 
