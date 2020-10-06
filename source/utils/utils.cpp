@@ -90,5 +90,5 @@ std::string timeStr(void)
 {
 	time_t unixTime       = time(NULL);
 	struct tm* timeStruct = gmtime((const time_t*)&unixTime);
-	return format("%02i:%02i:%02i", timeStruct->tm_hour, timeStruct->tm_min, timeStruct->tm_sec);
+	return format("%02i:%02i:%02i", timeStruct->tm_hour, timeStruct->tm_min);
 }

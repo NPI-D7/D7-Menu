@@ -84,7 +84,8 @@ Result Init::Initialize() {
 
 	//Msg::DisplayMsg("Scanning sdcard...");
 	//GameManagement::scanTitleID();
-	
+	Msg::DisplayMsg("Scanning SD Card...");
+	GameManagement::scanTitleID(); 
 	
 		// Enable speed-up for New 3DS users
 	// We don't rely on older screens, so set false as the last param here.

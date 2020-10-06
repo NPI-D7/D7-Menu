@@ -71,7 +71,7 @@ void gamecard::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		exiting = true;
 	}
 	if (hHeld & KEY_SELECT){
-		GFX::DrawTop();
+		GFX::DrawTopSP();
 		Gui::DrawString(1, 30, 0.8f, WHITE, "\uE000: Start");
 		Gui::DrawString(1, 60, 0.8f, WHITE, "\uE07B / \uE07C: Navigate");
 		Gui::DrawString(1, 90, 0.8f, WHITE, "\uE07B / \uE07C(CirclePad): Navigate Fast!");
