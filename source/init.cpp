@@ -32,8 +32,7 @@
 #include "ptmu_x.h"
 #include "core/management/gameManagement.hpp"
 #include "colors.hpp"
-#include "Decoder.hpp"
-#include "STDirectory.hpp"
+
 
 #include <3ds.h>
 #include <algorithm>
@@ -93,7 +92,7 @@ Result Init::Initialize() {
 	Msg::DisplayMsg("Scanning SD Card...");
 	GameManagement::scanTitleID(); 
 
-	decoder.get("/Faint.mp3");
+	
 
 		
 	
