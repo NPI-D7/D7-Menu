@@ -59,17 +59,7 @@ void MainMenu::Draw(void) const {
 
 
 
-	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
-		if (this->Selection == i) {
-			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 170, 255));
-		} else {
-			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 100, 255));
-		}
-	}
-	Gui::DrawStringCentered(0, MMButtons[0].y+10, 0.6f, WHITE, "SDCard");
-	Gui::DrawStringCentered(0, MMButtons[1].y+10, 0.6f, WHITE, "GameCard");
-	Gui::DrawStringCentered(0, MMButtons[2].y+10, 0.6f, WHITE, "???");
-
+	
 
 
 
@@ -83,7 +73,17 @@ void MainMenu::Draw(void) const {
 
 	GFX::DrawBottom();
 	
-	
+	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
+		if (this->Selection == i) {
+			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 170, 255));
+		} else {
+			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, C2D_Color32(0, 170, 100, 255));
+		}
+	}
+	Gui::DrawStringCentered(0, MMButtons[0].y+10, 0.6f, WHITE, "SDCard");
+	Gui::DrawStringCentered(0, MMButtons[1].y+10, 0.6f, WHITE, "GameCard");
+	Gui::DrawStringCentered(0, MMButtons[2].y+10, 0.6f, WHITE, "???");
+
 
 	Gui::DrawString(37, 214, 0.8f, WHITE, "Hold \uE046 to show controols!");
 	// Draw Buttons. ;P
