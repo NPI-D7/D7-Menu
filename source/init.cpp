@@ -155,6 +155,7 @@ Result Init::MainLoop() {
 		Gui::ScreenLogic(hDown, hHeld, touch, true, false);
 		C3D_FrameEnd(0);
 		if (exiting) {
+                        stopMusic();
 			if (!fadeout)	break;
 		}
 
