@@ -115,7 +115,8 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		} else if (this->Selection == 1) {
 			Gui::setScreen(std::make_unique<gamecard>(), true, false);
 		} else if (this->Selection == 2) {
-                        Msg::DisplayMsg("Downloading...");
+                    Msg::DisplayMsg("Get Musicfile");
+					Decoder::get("sdmc:/3ds/NPI/music/Test/Faint.mp3");
                         
                 }
      
@@ -128,7 +129,8 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		} else if (touching(touch, this->MMButtons[1])) {
 			Gui::setScreen(std::make_unique<gamecard>(), true, false);
 		} else if (touching(touch, this->MMButtons[2])) {
-                Msg::DisplayMsg("Downloading...");
+               	Msg::DisplayMsg("Get Musicfile");
+				Decoder::get("sdmc:/3ds/NPI/music/Test/Faint.mp3");
                 
                 }
 	}
