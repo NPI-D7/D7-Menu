@@ -35,7 +35,7 @@ extern C2D_SpriteSheet sprites;
 void Stack::Draw(void) const {
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
-	Gui::DrawString(0, 2, 0.8f, WHITE, timeStr());
+	 
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu", 400);
 	Gui::DrawStringCentered(0, 40, 0.8f, WHITE, "DSGameCards ar not supported yet.\n\nBefore removing a gamecard\n\ngo back to the MainMenu.", 400);
 	Gui::DrawStringCentered(0, 214, 0.8, WHITE, "Universal-Team, Tobi", 400);

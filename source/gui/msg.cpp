@@ -42,7 +42,7 @@ void Msg::DisplayMsg(std::string text) {
 	C2D_TargetClear(Bottom, BLACK);
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
-	Gui::DrawString(0, 2, 0.8f, WHITE, timeStr());
+
 	Gui::DrawStringCentered(0, 0, 0.8f, WHITE, "D7-Menu", 400);
 	Gui::DrawString(10, 40, 0.8f, WHITE, text, 380);
 	GFX::DrawBottom();

@@ -23,7 +23,7 @@ void gamecard::Draw(void) const {
 	
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
-	Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
+	
 	
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu", 400);
 	Gui::DrawString(397-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(selectedTitle + 1) + " / " + std::to_string(maxTitles)), 237-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(selectedTitle + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(selectedTitle + 1) + " / " + std::to_string(maxTitles));

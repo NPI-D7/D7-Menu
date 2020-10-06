@@ -53,7 +53,7 @@ void MainMenu::Draw(void) const {
 	
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
-	Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
+	
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu->MainMenu", 400);
 
 
