@@ -33,14 +33,17 @@
 #include "core/management/gameManagement.hpp"
 #include "colors.hpp"
 #include "Decoder.hpp"
+#include "STDirectory.hpp"
 
 #include <3ds.h>
 #include <algorithm>
 #include <dirent.h>
 #include <unistd.h>
 #include <iostream>
+#include <vector>
 
-
+std::vector<std::string> bgm;
+std::unique_ptr<Decoder> decoder;
 
 bool exiting = false;
 
@@ -88,13 +91,33 @@ Result Init::Initialize() {
 	Msg::DisplayMsg("Scanning SD Card...");
 	GameManagement::scanTitleID(); 
 
-	Msg::DisplayMsg("Get Musicfile");
-	Decoder::get("sdmc:/3ds/NPI/music/Test/Faint.mp3");
-	
-		// Enable speed-up for New 3DS users
-	// We don't rely on older screens, so set false as the last param here.
+	STDirectory dir("/3ds/NPI/music/Test");
+	if (dir.good()){
+
+		for (size_t i=0; i < dir.count(); i++) {
+
+			if (dir.folder(i)){
+
+				auto decoder = Decoder::get("/3ds/NPI/music/Test/" + dir.item(i));
+
+				if (decoder && decoder->good()){
+
+					bgm.emplace_back("/3ds/NPI/music/Test/" + dir.item(i));
+			}
+
+			}
+		
+			Msg::DisplayMsg("Get Musicfile");
+			Decoder::get(bgm);
+
+		}
+
+		
+	}
+
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
 	return 0;
+	
 }
 
 Result Init::MainLoop() {
