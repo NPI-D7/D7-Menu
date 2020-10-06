@@ -44,12 +44,12 @@ void SDMenu::Draw(void) const {
 	for(int i=0;i<BOXES && i<maxTitles;i++) {
 		if(screenPos + i == Selection) {
 			Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
-			C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+			C2D_DrawImageAt(GameManagement::installedTitles[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
 		}
 	
 		
 		
-		C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f); 
+		C2D_DrawImageAt(GameManagement::installedTitles[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f); 
 		// Installed Title Icon.
 	}
 
@@ -119,6 +119,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
         if (hDown & KEY_LEFT) {
 		if (this->Selection > 0)	this->Selection--;
 	}
+	
 
 	// Press Up to go one entry up.
 	if (hDown & KEY_UP) {
