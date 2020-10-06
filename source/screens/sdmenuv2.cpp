@@ -124,4 +124,10 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	if (hDown & KEY_UP) {
 		if (this->Selection > 4)	this->Selection-= 5;
 	}
+		if(Selection < screenPos) {
+		screenPos = Selection;
+	} 
+	if (Selection > screenPos + BOXES - 1) {
+		screenPos = Selection - BOXES + 1;
+	}
 }
