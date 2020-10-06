@@ -4,6 +4,9 @@
 #include "gameManagement.hpp"
 #include  "utils.hpp"
 
+
+#define BOXES 15
+
 extern bool touching(touchPosition touch, Structs::ButtonPos button);
 extern bool exiting;
 
@@ -27,21 +30,28 @@ void SDMenu::Draw(void) const {
 	GFX::DrawBottom();
 
 	// Draw Buttons. ;P
-	for (int i = 0; i < (int)this->mainButtons.size(); i++) {
-		if (this->Selection == i) {
-			
+	//for (int i = 0; i < (int)this->mainButtons.size(); i++) {
+	//	if (this->Selection == i) {
+	//		
+	//		Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
+    //                    C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+	//	}
+	//	else {
+	//			C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+//
+	//	} 
+	//}
+	for(int i=0;i<BOXES && i<maxTitles;i++) {
+		if(screenPos + i == Selection) {
 			Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
-                        C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+			C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
 		}
-		else {
-				C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
-		}
-	}
-
-    
-
-
 	
+		
+		
+		C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f); 
+		// Installed Title Icon.
+	}
 
 	
 
