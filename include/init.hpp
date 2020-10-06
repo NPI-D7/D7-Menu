@@ -34,6 +34,10 @@ namespace Init {
 	Result Initialize();
 	Result MainLoop();
 	Result Exit();
+
+        void loadSoundEffects(void);
+	void playMusic(void);
+	void stopMusic(void);
 	
 }
 
