@@ -111,7 +111,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
 	if (hDown & KEY_DOWN) {
-		if (this->Selection < (int)this->mainButtons.size() - 5)	this->Selection+= 5;
+		if (this->Selection < (int)this->maxTitles - 5)	this->Selection+= 5;
 	}
         if (hDown & KEY_RIGHT) {
 		if (this->Selection < (int)this->maxTitles - 1)	this->Selection++;
@@ -127,6 +127,9 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	}
 	if (hDown & KEY_R) {
 		if (this->Selection < (int)this->maxTitles -8) this->Selection += 8;
+	}
+	if (hDown & KEY_L) {
+		if (this->Selection > 7)     this->Selection -=8;
 	}
 		if(Selection < screenPos) {
 		screenPos = Selection;
