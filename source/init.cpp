@@ -125,7 +125,7 @@ Result Init::Initialize() {
 
 	
 	
-	playFile("/3ds/NPI/music/Test/Faint.mp3");
+	
 	
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
