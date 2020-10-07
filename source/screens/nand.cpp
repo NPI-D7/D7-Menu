@@ -6,6 +6,14 @@
 #include "mainMenu.hpp"
 #include "msg.hpp"
 
+
+extern "C" {
+	#include "music/error.h"
+	#include "music/playback.h"
+}
+
+
+
 #include <unistd.h>
 #include <iostream>
 

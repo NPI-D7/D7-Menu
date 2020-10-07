@@ -60,7 +60,7 @@ bool touching(touchPosition touch, Structs::ButtonPos button) {
 
 void Init::loadSoundEffects(void) {
 	if (dspFound) {
-		if (access("sdmc:/3ds/NPI/music/Test/Figure.wav", F_OK ) != -1) {
+		if (access("sdmc:/3ds/NPI/music/Test/Figureeeeeeeeee.wav", F_OK ) != -1) {
 			bgm = new sound("sdmc:/3ds/NPI/music/Test/Figure.wav", 1, true);
 			songIsFound = true;
 		}
@@ -118,16 +118,16 @@ Result Init::Initialize() {
 
 	
 
-		
+	playFile("sdmc:/3ds/NPI/music/Test/Faint.mp3");
 	
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
-        if ( access( "sdmc:/3ds/dspfirm.cdc", F_OK ) != -1 ) {
-		ndspInit();
-		dspFound = true;
-		loadSoundEffects();
-		playMusic();
-	}
+   // if ( access( "sdmc:/3ds/dspfirm.cdc", F_OK ) != -1 ) {
+	//	ndspInit();
+	//	dspFound = true;
+	//	loadSoundEffects();
+	//	playMusic();
+	//}
 	return 0;
 	
 }
@@ -155,7 +155,7 @@ Result Init::MainLoop() {
 		Gui::ScreenLogic(hDown, hHeld, touch, true, false);
 		C3D_FrameEnd(0);
 		if (exiting) {
-                        stopMusic();
+            stopMusic();
 			if (!fadeout)	break;
 		}
 

@@ -78,9 +78,9 @@ TARGET		:=	D7-Menu
 BUILD		:=	build
 UNIVCORE	:= 	Universal-Core
 
-SOURCES		:=	test test/decoder $(UNIVCORE) source source/gui source/screens source/core/management source/utils source/core/management/nand
+SOURCES		:=	mp3p test test/decoder $(UNIVCORE) source source/gui source/screens source/core/management source/utils source/core/management/nand
 DATA		:=	data
-INCLUDES	:= test test/decoder $(UNIVCORE) include include/gui include/screens include/core/management include/utils include/core/management/nand
+INCLUDES	:= test mp3p test/decoder $(UNIVCORE) include include/gui include/screens include/core/management include/utils include/core/management/nand
 GRAPHICS	:=	assets/gfx
 #GFXBUILD	:=	$(BUILD)
 ROMFS		:=	romfs
