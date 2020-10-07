@@ -35,7 +35,7 @@
 #include "gamecard.hpp"
 #include "nand.hpp"
 #include "sdmenuv2.hpp"
-#include "Decoder.hpp"
+
 
 #include "msg.hpp"
 
@@ -54,7 +54,7 @@ void MainMenu::Draw(void) const {
 	GFX::DrawTop();
 	GFX::DrawBetteryTop();
 	
-	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu->MainMenu", 400);
+	Gui::DrawStringCentered(0, 2, 0.8f, WHITE, "D7-Menu", 400);
 
 
 
