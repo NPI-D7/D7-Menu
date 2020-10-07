@@ -35,6 +35,13 @@
 #include "sound.h"
 
 
+
+extern "C" {
+	#include "error.h"
+	#include "playback.h"
+}
+
+
 #include <3ds.h>
 #include <algorithm>
 #include <dirent.h>
@@ -117,8 +124,8 @@ Result Init::Initialize() {
 	GameManagement::scanTitleID(); 
 
 	
-
-	playFile("sdmc:/3ds/NPI/music/Test/Faint.mp3");
+	
+	playFile("/3ds/NPI/music/Test/Faint.mp3");
 	
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
