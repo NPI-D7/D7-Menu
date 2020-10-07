@@ -7,10 +7,7 @@
 #include "msg.hpp"
 
 
-extern "C" {
-	#include "music/error.h"
-	#include "music/playback.h"
-}
+
 
 
 
