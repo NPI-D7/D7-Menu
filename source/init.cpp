@@ -33,7 +33,7 @@
 #include "core/management/gameManagement.hpp"
 #include "colors.hpp"
 #include "sound.h"
-
+#include "STDirectory.hpp"
 
 
 extern "C" {
@@ -86,6 +86,24 @@ void Init::stopMusic(void) {
 	}
 }
 
+void Init::MusicInit(void) {
+	STDirectory dir("/3ds/NPI/music/Test/");
+	playbackInfo_t playbackInfo;
+	 if (dir.good())
+    {
+        for (size_t i = 0; i < dir.count(); i++)
+        {
+            if (!dir.folder(i))
+            {
+               
+				
+				changeFile(dir.item(i), &playbackInfo);
+                
+            }
+        }
+    }
+}
+
 Result Init::Initialize() {
 	// Here we set the initial fade effect for fadein.
 	fadealpha = 255;
@@ -124,7 +142,7 @@ Result Init::Initialize() {
 	GameManagement::scanTitleID(); 
 
 	
-	playbackInfo_t playbackInfo;
+	
 	changeFile("sdmc:/3ds/NPI/music/Test/Faint.mp3", &playbackInfo);
 	
 	

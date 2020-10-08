@@ -38,6 +38,7 @@ namespace Init {
         void loadSoundEffects(void);
 	void playMusic(void);
 	void stopMusic(void);
+	void MusicInit(void);
 	
 }
 
