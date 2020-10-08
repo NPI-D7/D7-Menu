@@ -132,7 +132,7 @@ Result Init::Initialize() {
 	playbackInfo_t playbackInfo;
 	changeFile("sdmc:/3ds/NPI/music/Test/Ffigure4.wav", &playbackInfo);
 	
-	
+	aptSetSleepAllowed(true);
 
 	Gui::setScreen(std::make_unique<Stack>(), false, false); // Set the screen initially as Stack Screen.
    // if ( access( "sdmc:/3ds/dspfirm.cdc", F_OK ) != -1 ) {
