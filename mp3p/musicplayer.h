@@ -23,3 +23,4 @@ struct watchdogInfo
 };
 
 void playbackWatchdog(void* infoIn);
+static int changeFile(const char* ep_file, struct playbackInfo_t* playbackInfo);
