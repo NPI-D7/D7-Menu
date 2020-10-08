@@ -124,7 +124,8 @@ Result Init::Initialize() {
 	GameManagement::scanTitleID(); 
 
 	
-	
+	playbackInfo_t playbackInfo;
+	changeFile("sdmc:/3ds/NPI/music/Test/Faint.mp3", &playbackInfo);
 	
 	
 

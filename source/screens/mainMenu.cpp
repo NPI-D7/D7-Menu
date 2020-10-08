@@ -35,7 +35,7 @@
 #include "gamecard.hpp"
 #include "nand.hpp"
 #include "sdmenuv2.hpp"
-#include "musicselector.hpp"
+
 
 
 #include "msg.hpp"
@@ -129,8 +129,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		} else if (touching(touch, this->MMButtons[1])) {
 			Gui::setScreen(std::make_unique<gamecard>(), true, false);
 		} else if (touching(touch, this->MMButtons[2])) {
-            Gui::setScreen(std::make_unique<MusicSel>(), true, false);
-                
+        
                 }
 	}
      //   if (hDown & KEY_L) {
