@@ -1,8 +1,5 @@
 #include <3ds.h>
 
-extern "C" {
-
-
 #include <dirent.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -17,16 +14,12 @@ extern "C" {
 #include "playback.h"
 
 
-}
 
 
-namespace Player {
-    void playbackWatchdog(void* infoIn);
-    static int changeFile(const char* ep_file, struct playbackInfo_t* playbackInfo);4
-    void PlaySong(void);
-}
- struct watchdogInfo
+struct watchdogInfo
 {
 	PrintConsole*		screen;
 	struct errInfo_t*	errInfo;
 };
+
+void playbackWatchdog(void* infoIn);

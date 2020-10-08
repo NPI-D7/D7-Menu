@@ -1,8 +1,8 @@
-#include "musicplayer.hpp"
+#include "musicplayer.h"
 
+volatile bool runThreads = true;
 
-
-void Player::playbackWatchdog(void* infoIn)
+void playbackWatchdog(void* infoIn)
 {
 	struct watchdogInfo* info = infoIn;
 
@@ -45,7 +45,7 @@ void Player::playbackWatchdog(void* infoIn)
  * \param	playbackInfo	Information that the playback thread requires to
  *							play file.
  */
-static int Player::changeFile(const char* ep_file, struct playbackInfo_t* playbackInfo)
+static int changeFile(const char* ep_file, struct playbackInfo_t* playbackInfo)
 {
 	s32 prio;
 	static Thread thread = NULL;
@@ -81,8 +81,4 @@ static int Player::changeFile(const char* ep_file, struct playbackInfo_t* playba
 	thread = threadCreate(playFile, playbackInfo, 32 * 1024, prio - 1, -2, false);
 
 	return 0;
-}
-
-Player::PlaySong(){
-    Player::changeFile("sdmc:/3ds/NPI/music/Test/Faint.mp3", &playbackInfo_t);
 }
