@@ -130,7 +130,7 @@ Result Init::Initialize() {
 
 	
 	playbackInfo_t playbackInfo;
-	changeFile("sdmc:/3ds/NPI/music/Test/Faint.mp3", &playbackInfo);
+	changeFile("sdmc:/3ds/NPI/music/Test/Ffigure4.wav", &playbackInfo);
 	
 	
 
@@ -168,6 +168,7 @@ Result Init::MainLoop() {
 		Gui::ScreenLogic(hDown, hHeld, touch, true, false);
 		C3D_FrameEnd(0);
 		if (exiting) {
+                        stopPlayback();
             stopMusic();
 			if (!fadeout)	break;
 		}
