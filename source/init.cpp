@@ -178,6 +178,7 @@ Result Init::MainLoop() {
 	}
 	// Exit all services and exit the app.
 	Init::Exit();
+        aptSetSleepAllowed(true);
 	return 0;
 }
 
