@@ -35,7 +35,7 @@
 #include "gamecard.hpp"
 #include "nand.hpp"
 #include "sdmenuv2.hpp"
-
+#include "screenshot.hpp"
 
 
 #include "msg.hpp"
@@ -109,6 +109,9 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		Gui::DrawString(1, 60, 0.8f, WHITE, "\uE07B / \uE07C: Navigate");
 		Gui::DrawString(1, 90, 0.8f, WHITE, "Press \uE045 to exit!");
 		GFX::DrawBottomSP();
+	}
+	if (hDown & KEY_L) {
+		Screenshot_Capture();
 	}
 	if (hDown & KEY_A) {
 		if (this->Selection == 0) {
