@@ -49,4 +49,8 @@ void Msg::DisplayMsg(std::string text) {
 	Gui::DrawSprite(sprites, sprites_ulogo_idx, -10, 20, 0.65, 0.65);
 	C3D_FrameEnd(0);
 }
+void Msg::DisplayInfo(std::string inftxt){
+	GFX::DrawTopSP();
+	Gui::DrawStringCentered(0, 237, 0.6f, WHITE, inftxt);
+}
 

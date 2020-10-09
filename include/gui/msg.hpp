@@ -31,6 +31,7 @@
 
 namespace Msg {
 	void DisplayMsg(std::string text);
+	void DisplayInfo(std::string inftxt);
 
 
 }

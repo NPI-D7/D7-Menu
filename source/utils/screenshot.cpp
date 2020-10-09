@@ -2,6 +2,7 @@
 
 #include "common.hpp"
 #include "screenshot.hpp"
+#include "msg.hpp"
 
 
 extern "C" {
@@ -120,10 +121,10 @@ static void Screenshot_GenerateFilename(int number, char *fileName, const char *
 	int year = timeStruct->tm_year + 1900;
 
 	if (!(BROWSE_STATE == BROWSE_STATE_NAND)) {
-		if (!(FS_DirExists(archive, "/screenshots/")))
-			FS_MakeDir(archive, "/screenshots");
+		if (!(FS_DirExists(archive, "/3ds/NPI/screenshots/D7-Menu/")))
+			FS_RecursiveMakeDir(archive, "/3ds/NPI/screenshots/D7-Menu/");
 
-		sprintf(fileName, "/screenshots/Screenshot_%02d%02d%02d-%i%s", year, month, day, num, ext);
+		sprintf(fileName, "/3ds/NPI/screenshots/D7-Menu/Screenshot_%02d%02d%02d-%i%s", year, month, day, num, ext);
 	}
 }
 
@@ -140,4 +141,6 @@ void Screenshot_Capture(void) {
 
 	Screenshot_GenerateScreenshot(filename);
 	num++;
+    Msg::DisplayInfo("screenshot generated:", filename);
+
 }
