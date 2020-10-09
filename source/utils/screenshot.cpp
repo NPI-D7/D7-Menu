@@ -141,6 +141,6 @@ void Screenshot_Capture(void) {
 
 	Screenshot_GenerateScreenshot(filename);
 	num++;
-    Msg::DisplayInfo("screenshot generated:", filename);
+    Msg::DisplayInfo("screenshot generated!");
 
 }
