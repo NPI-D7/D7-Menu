@@ -32,4 +32,10 @@
 #include "gui.hpp"
 #include "screenCommon.hpp"
 
+extern "C" {
+	#include "error.h"
+	#include "playback.h"
+    #include "fs.h"
+}
+
 #endif
