@@ -37,5 +37,8 @@ extern "C" {
 	#include "playback.h"
     #include "fs.h"
 }
-
+enum BROWSE_STATES {
+    BROWSE_STATE_SD = 0,
+    BROWSE_STATE_NAND = 1
+};
 #endif
