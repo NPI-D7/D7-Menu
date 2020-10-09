@@ -1,6 +1,6 @@
 
 
-#include "common.hpp"
+
 #include "screenshot.h"
 
 
