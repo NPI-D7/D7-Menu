@@ -86,6 +86,8 @@ void gamecard::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		Msg::DisplayMsg("Scan Gamecard...");
 		GameManagement::scanGamecard();
 	}
+
+
 	if (hDown & KEY_R){
 		Gui::setScreen(std::make_unique<MainMenu>(), true, false);
 	}

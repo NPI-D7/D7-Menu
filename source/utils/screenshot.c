@@ -1,17 +1,16 @@
 
 
 #include "common.hpp"
-#include "screenshot.hpp"
-#include "msg.hpp"
+#include "screenshot.h"
 
 
-extern "C" {
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <3ds.h>
 #include "fs.h"
-
 
 }
 
@@ -27,7 +26,7 @@ static Result Screenshot_GenerateScreenshot(const char *path) {
 	Result ret = 0;
 
 	// Get top/bottom framebuffers
-//	u8 *gfxBottom = gfxGetFramebuffer(GFX_BOTTOM, GFX_BOTTOM, NULL, NULL);
+	u8 *gfxBottom = gfxGetFramebuffer(GFX_BOTTOM, GFX_BOTTOM, NULL, NULL);
 	u8 *gfxTopLeft = gfxGetFramebuffer(GFX_TOP, GFX_LEFT, NULL, NULL);
 
 	// Open file for writing screenshot
@@ -69,32 +68,32 @@ static Result Screenshot_GenerateScreenshot(const char *path) {
 	}
 
 	// Generate bottom right
-	//framebuf = gfxBottom;
+	framebuf = gfxBottom;
 //
-	//for (y = 0; y < 240; y++) {
-	//	for (x = 0; x < 320; x++) {
-	//		int si = ((239 - y) + (x * 240)) * 3;
-	//		int di = size + ((x+40) + ((239 - y) * 400)) * 3;
-	//		buf[di++] = framebuf[si++];
-	//		buf[di++] = framebuf[si++];
-	//		buf[di++] = framebuf[si++];
-	//	}
+	for (y = 0; y < 240; y++) {
+		for (x = 0; x < 320; x++) {
+			int si = ((239 - y) + (x * 240)) * 3;
+			int di = size + ((x+40) + ((239 - y) * 400)) * 3;
+			buf[di++] = framebuf[si++];
+			buf[di++] = framebuf[si++];
+			buf[di++] = framebuf[si++];
+		}
 //
-	//	// Make adjustments for the smaller width
-	//	for (x = 0; x < 40; x++) {
-	//		int di = size + (x + ((239 - y) * 400)) * 3;
-	//		buf[di++] = 0;
-	//		buf[di++] = 0;
-	//		buf[di++] = 0;
-	//	}
+		// Make adjustments for the smaller width
+		for (x = 0; x < 40; x++) {
+			int di = size + (x + ((239 - y) * 400)) * 3;
+			buf[di++] = 0;
+			buf[di++] = 0;
+			buf[di++] = 0;
+		}
 //
-	//	for (x = 360; x < 400; x++) {
-	//		int di = size + (x + ((239 - y) * 400)) * 3;
-	//		buf[di++] = 0;
-	//		buf[di++] = 0;
-	//		buf[di++] = 0;
-	//	}
-	//}
+		for (x = 360; x < 400; x++) {
+			int di = size + (x + ((239 - y) * 400)) * 3;
+			buf[di++] = 0;
+			buf[di++] = 0;
+			buf[di++] = 0;
+		}
+	}
 //
 	if (R_FAILED(ret = FSFILE_Write(handle, &bytesWritten, offset, (u32 *)buf, size + 576000, 0x10001))) {
 	
@@ -141,6 +140,6 @@ void Screenshot_Capture(void) {
 
 	Screenshot_GenerateScreenshot(filename);
 	num++;
-    Msg::DisplayInfo("screenshot generated!");
+   
 
 }
