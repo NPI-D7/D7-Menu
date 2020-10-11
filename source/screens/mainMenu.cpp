@@ -110,9 +110,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		Gui::DrawString(1, 90, 0.8f, WHITE, "Press \uE045 to exit!");
 		GFX::DrawBottomSP();
 	}
-	if (hDown & KEY_L) {
-		Screenshot_Capture();
-	}
+	
 	if (hDown & KEY_A) {
 		if (this->Selection == 0) {
 			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
@@ -135,9 +133,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
         
                 }
 	}
-     //   if (hDown & KEY_L) {
-      //  Screenshot_Capture();
-      //  }
+     //   
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
 	if (hDown & KEY_DOWN) {
 		if (this->Selection < (int)this->MMButtons.size() - 1)	this->Selection++;
