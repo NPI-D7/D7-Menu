@@ -120,9 +120,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
         if (hDown & KEY_LEFT) {
 		if (this->Selection > 0)	this->Selection--;
 	}
-	if (hDown & KEY_Y) {
-		Screenshot_Capture();
-	}
+	
 
 	// Press Up to go one entry up.
 	if (hDown & KEY_UP) {
