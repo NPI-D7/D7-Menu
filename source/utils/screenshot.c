@@ -12,7 +12,7 @@
 #include <3ds.h>
 #include "fs.h"
 
-}
+
 
 
 static int num = 0;
