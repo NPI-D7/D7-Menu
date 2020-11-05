@@ -1,6 +1,6 @@
 /*
 *   This file is part of Universal-Core
-*   Copyright (C) 2020 DeadPhoenix8091, Epicpkmn11, Flame, RocketRobz, StackZ, TotallyNotGuy
+*   Copyright (C) 2020 Universal-Team
 *
 *   This program is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -30,9 +30,7 @@
 #include "gui.hpp"
 #include "structs.hpp"
 
-extern C3D_RenderTarget* Top;
-extern C3D_RenderTarget* TopRight;
-extern C3D_RenderTarget* Bottom;
+extern C3D_RenderTarget *Top, *TopRight, *Bottom;
 extern bool fadeout, fadein, fadeout2, fadein2;
 extern int fadealpha, fadecolor;
 
