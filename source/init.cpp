@@ -50,7 +50,7 @@
 sound *bgm = NULL;
 bool songIsFound = false;
 bool dspFound = false;
-
+extern count cnt;
 
 bool exiting = false;
 
@@ -125,7 +125,7 @@ Result Init::Initialize() {
 
 	//Msg::DisplayMsg("Scanning sdcard...");
 	//GameManagement::scanTitleID();
-	Msg::DisplayMsg("Scanning SD Card...");
+	Msg::DisplayMsgPGR(2, cnt, "Scanning SD Card...");
 	GameManagement::scanTitleID(); 
 
 	

@@ -32,6 +32,7 @@
 namespace Msg {
 	void DisplayMsg(std::string text);
 	void DisplayInfo(std::string inftxt);
+	void DisplayMsgPGR(u64 current, u64 total);
 
 
 }
