@@ -54,19 +54,19 @@ void Msg::DisplayInfo(std::string inftxt){
 	GFX::DrawTopSP();
 	Gui::DrawStringCentered(0, 237, 0.6f, WHITE, inftxt);
 }
-/*void Msg::DisplayMsgPGR(u64 current, u64 total, std::string text) {
-	Gui::clearTextBufs();
-	C3D_FrameBegin(C3D_FRAME_SYNCDRAW);
-	C2D_TargetClear(Top, BLACK);
-	C2D_TargetClear(Bottom, BLACK);
-	GFX::DrawTop();
-	GFX::DrawBetteryTop();
-	PGRBar::DrawPGRBar(current, total);
+//void Msg::DisplayMsgPGR(u64 current, u64 total, std::string text) {
+//	Gui::clearTextBufs();
+//	C3D_FrameBegin(C3D_FRAME_SYNCDRAW);
+//	C2D_TargetClear(Top, BLACK);
+//	C2D_TargetClear(Bottom, BLACK);
+//	GFX::DrawTop();
+//	GFX::DrawBetteryTop();
+//       PGRBar::DrawPGRBar(current, total);
+//
+//	Gui::DrawStringCentered(0, 0, 0.8f, WHITE, "D7-Menu", 400);
+//	Gui::DrawString(10, 40, 0.8f, WHITE, text, 380);
+//	GFX::DrawBottom();
+//	Gui::DrawSprite(sprites, sprites_ulogo_idx, -10, 20, 0.65, 0.65);
+//	C3D_FrameEnd(0);
+//}
 
-	Gui::DrawStringCentered(0, 0, 0.8f, WHITE, "D7-Menu", 400);
-	Gui::DrawString(10, 40, 0.8f, WHITE, text, 380);
-	GFX::DrawBottom();
-	Gui::DrawSprite(sprites, sprites_ulogo_idx, -10, 20, 0.65, 0.65);
-	C3D_FrameEnd(0);
-}
-\*
