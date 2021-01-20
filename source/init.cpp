@@ -123,10 +123,10 @@ Result Init::Initialize() {
    	//    return DisplayStartupError("ptmuxInit failed.", res);
    	//}
 
-	//Msg::DisplayMsg("Scanning sdcard...");
-	//GameManagement::scanTitleID();
-	Msg::DisplayMsgPGR(2, 6, "Scanning SD Card...");
-	GameManagement::scanTitleID(); 
+	Msg::DisplayMsg("Scanning sdcard...");
+	GameManagement::scanTitleID();
+	//Msg::DisplayMsgPGR(2, 6, "Scanning SD Card...");
+	//GameManagement::scanTitleID(); 
 
 	
 	playbackInfo_t playbackInfo;
