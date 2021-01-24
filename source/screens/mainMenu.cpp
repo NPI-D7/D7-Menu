@@ -55,7 +55,7 @@ extern C2D_SpriteSheet sprites;
 void MainMenu::Draw(void) const {
 	
 	GFX::DrawTop();
-	Gui::DrawSprite(sprites, sprites_ObitoTop_idx, 0, 0, 1.0f, 1.0f);
+	
 	GFX::DrawBetteryTop();
 	
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITET, "D7-Menu", 400);
@@ -76,7 +76,7 @@ void MainMenu::Draw(void) const {
 
 
 	GFX::DrawBottom();
-	Gui::DrawSprite(sprites, sprites_ItachiBot_idx, 300, 240, 1.0f, 1.0f);
+	
 	
 	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
 		if (this->Selection == i) {
