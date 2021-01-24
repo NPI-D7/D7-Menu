@@ -40,6 +40,22 @@
 #define BUTTONSELECTCOLOR   C2D_Color32(61, 61, 61, 255)
 #define BUTTONUNSELECTCOLOR C2D_Color32(61, 61, 61, 160)
 
+#define BUTTONSELECTED C2D_Color32(0, 170, 170, 255)
+#define BUTTON C2D_Color32(0, 170, 100, 255)
+
+//2.0XD
+#define BLACKT			C2D_Color32(0, 0, 0, 150)
+#define WHITET			C2D_Color32(255, 255, 255, 150)
+#define REDT				C2D_Color32(255, 0, 0, 150)
+#define GREENT			C2D_Color32(0, 255, 0, 150)
+#define BLUET			C2D_Color32(0, 0, 255, 150)
+
+#define BARCOLORT        C2D_Color32(0, 0, 180, 150)
+#define BGCOLORT         C2D_Color32(0, 0, 0, 150)
+
+#define BUTTONSELECTEDT C2D_Color32(0, 170, 170, 150)
+#define BUTTONT C2D_Color32(0, 170, 100, 150)
+
 typedef u32 Color;
 
 #endif

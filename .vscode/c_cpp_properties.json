@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}\\include\\**",
+                "${workspaceFolder}\\Universal-Core\\**",
                 "C:\\devkitPro\\libctru\\include\\**",
                 "C:\\devkitPro\\portlibs\\3ds\\include\\**"
             ],
