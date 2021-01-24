@@ -55,6 +55,7 @@ extern C2D_SpriteSheet sprites;
 void MainMenu::Draw(void) const {
 	
 	GFX::DrawTop();
+	Gui::DrawSprite(sprites, bgs_ObitoTop_idx, 0, 0, 1.0f, 1.0f);
 	GFX::DrawBetteryTop();
 	
 	Gui::DrawStringCentered(0, 2, 0.8f, WHITET, "D7-Menu", 400);
