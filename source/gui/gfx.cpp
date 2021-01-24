@@ -52,17 +52,17 @@ extern C2D_SpriteSheet sprites; // Include the spritesheet extern.
 void GFX::DrawTop(void) {
 	Gui::ScreenDraw(Top);
 	Gui::DrawSprite(sprites, sprites_ObitoTop_idx, 0, 0, 1.4f, 1.4f);
-	Gui::Draw_Rect(0, 0, 400, 30, C2D_Color32(0, 160, 160, 150));
+	Gui::Draw_Rect(0, 0, 400, 30, WHITED);
 	//Gui::Draw_Rect(0, 30, 400, 180, C2D_Color32(0, 120, 120, 255));
-	Gui::Draw_Rect(0, 210, 400, 30, C2D_Color32(0, 160, 160, 150));
+	Gui::Draw_Rect(0, 210, 400, 30, WHITED);
 }
 
 void GFX::DrawBottom(void) {
 	Gui::ScreenDraw(Bottom);
 	Gui::DrawSprite(sprites, sprites_ItachiBot_idx, 0, 0, 0.8f, 0.8f);
-	Gui::Draw_Rect(0, 0, 320, 30, C2D_Color32(0, 160, 160, 150));
+	Gui::Draw_Rect(0, 0, 320, 30, WHITED);
 	//Gui::Draw_Rect(0, 30, 320, 180, C2D_Color32(0, 120, 120, 255));
-	Gui::Draw_Rect(0, 210, 320, 30, C2D_Color32(0, 160, 160, 150));
+	Gui::Draw_Rect(0, 210, 320, 30, WHITED);
 }
 
 void GFX::DrawFileBrowseBG(bool isTop) {
