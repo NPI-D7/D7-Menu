@@ -1,4 +1,4 @@
---atlas -f rgba8888 -z auto
+--atlas -f rgba -z auto
 
 battery/battery0.png
 battery/battery1.png
