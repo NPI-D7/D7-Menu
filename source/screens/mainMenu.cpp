@@ -56,7 +56,7 @@ void MainMenu::Draw(void) const {
 	
 	GFX::DrawTop();
 	
-	GFX::DrawBetteryTop();
+	//GFX::DrawBetteryTop();
 	
 	Gui::DrawStringCentered(0, 2, 0.8f, BLACKT, "D7-Menu", 400);
 
