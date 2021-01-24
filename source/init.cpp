@@ -130,7 +130,7 @@ Result Init::Initialize() {
 
 	
 	playbackInfo_t playbackInfo;
-	changeFile("sdmc:/3ds/NPI/music/Test/Music.mp3", &playbackInfo);
+	changeFile("romfs:/ItachiTheme.ogg", &playbackInfo);
 	
 	aptSetSleepAllowed(false);
 
