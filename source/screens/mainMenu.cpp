@@ -58,7 +58,7 @@ void MainMenu::Draw(void) const {
 	
 	//GFX::DrawBetteryTop();
 	
-	Gui::DrawStringCentered(0, 2, 0.8f, BLACKT, "D7-Menu", 400);
+	Gui::DrawStringCentered(0, 2, 0.8f, BLACK, "D7-Menu", 400);
 
 
 
@@ -85,12 +85,12 @@ void MainMenu::Draw(void) const {
 			Gui::Draw_Rect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, BUTTONT);
 		}
 	}
-	Gui::DrawStringCentered(0, MMButtons[0].y+10, 0.6f, BLACKT, "SDCard");
-	Gui::DrawStringCentered(0, MMButtons[1].y+10, 0.6f, BLACKT, "GameCard");
-	Gui::DrawStringCentered(0, MMButtons[2].y+10, 0.6f, BLACKT, "???");
+	Gui::DrawStringCentered(0, MMButtons[0].y+10, 0.6f, BLACK, "SDCard");
+	Gui::DrawStringCentered(0, MMButtons[1].y+10, 0.6f, BLACK, "GameCard");
+	Gui::DrawStringCentered(0, MMButtons[2].y+10, 0.6f, BLACK, "???");
 
 
-	Gui::DrawString(37, 214, 0.8f, BLACKT, "Hold \uE046 to show controols!");
+	Gui::DrawString(37, 214, 0.8f, BLACK, "Hold \uE046 to show controols!");
 	// Draw Buttons. ;P
 
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
@@ -109,9 +109,9 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	}
 	if (hHeld & KEY_SELECT){
 		GFX::DrawTopSP();
-		Gui::DrawString(1, 30, 0.8f, BLACKT, "\uE000: Start");
-		Gui::DrawString(1, 60, 0.8f, BLACKT, "\uE07B / \uE07C: Navigate");
-		Gui::DrawString(1, 90, 0.8f, BLACKT, "Press \uE045 to exit!");
+		Gui::DrawString(1, 30, 0.8f, BLACK, "\uE000: Start");
+		Gui::DrawString(1, 60, 0.8f, BLACK, "\uE07B / \uE07C: Navigate");
+		Gui::DrawString(1, 90, 0.8f, BLACK, "Press \uE045 to exit!");
 		GFX::DrawBottomSP();
 	}
 	

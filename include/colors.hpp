@@ -53,8 +53,8 @@
 #define BARCOLORT        C2D_Color32(0, 0, 180, 150)
 #define BGCOLORT         C2D_Color32(0, 0, 0, 150)
 
-#define BUTTONSELECTEDT C2D_Color32(0, 170, 170, 150)
-#define BUTTONT C2D_Color32(0, 170, 100, 150)
+#define BUTTONSELECTEDT C2D_Color32(255, 255, 255, 150)
+#define BUTTONT C2D_Color32(255, 255, 100, 150)
 
 typedef u32 Color;
 

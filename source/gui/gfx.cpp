@@ -54,7 +54,7 @@ void GFX::DrawTop(void) {
 	Gui::DrawSprite(sprites, sprites_ObitoTop_idx, 0, 0, 1.4f, 1.4f);
 	Gui::Draw_Rect(0, 0, 400, 30, WHITET);
 	//Gui::Draw_Rect(0, 30, 400, 180, C2D_Color32(0, 120, 120, 255));
-	Gui::Draw_Rect(0, 210, 400, 30, WHITET);
+	//Gui::Draw_Rect(0, 210, 400, 30, WHITET);
 }
 
 void GFX::DrawBottom(void) {
