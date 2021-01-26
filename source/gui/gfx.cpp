@@ -51,7 +51,7 @@ extern C2D_SpriteSheet sprites; // Include the spritesheet extern.
 
 void GFX::DrawTop(void) {
 	Gui::ScreenDraw(Top);
-	Gui::DrawSprite(sprites, sprites_ObitoTop_idx, 0, 0, 1.4f, 1.4f);
+	Gui::DrawSprite(sprites, sprites_ObitoTop_idx, 0, 0, 1.0f, 1.0f);
 	Gui::Draw_Rect(0, 0, 400, 30, WHITET);
 	//Gui::Draw_Rect(0, 30, 400, 180, C2D_Color32(0, 120, 120, 255));
 	//Gui::Draw_Rect(0, 210, 400, 30, WHITET);

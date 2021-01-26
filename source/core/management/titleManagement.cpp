@@ -69,6 +69,7 @@ bool TitleManagement::load(u64 id, FS_MediaType media)
 
 	mName   = UTF16toUTF8((char16_t*)smdh->applicationTitles[1].shortDescription);
 	mAuthor = UTF16toUTF8((char16_t*)smdh->applicationTitles[1].publisher);
+	mVersion = UTF16toUTF8((char16_t*)smdh->header.version);
 	loadTitle = true;
 	mIcon     = loadTextureIcon(smdh);
 	delete smdh;
@@ -97,7 +98,7 @@ FS_MediaType TitleManagement::mediaType(void)
 }
 
 // Get the Icon from the SMDH.
-
+ 
 C2D_Image TitleManagement::icon(void)
 {
 	return mIcon;
@@ -112,4 +113,8 @@ std::string TitleManagement::name(void)
 std::string TitleManagement::Author(void)
 {
 	return mAuthor;
+}
+
+std::string TitleManagement::Version(void) {
+	return mVersion;
 }

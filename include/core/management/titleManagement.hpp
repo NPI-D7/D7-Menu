@@ -46,6 +46,7 @@ public:
 	FS_MediaType mediaType(void);
 	std::string name(void);
 	std::string Author(void);
+	std::string Version(void);
 	C2D_Image icon(void);
 
 private:
@@ -55,6 +56,7 @@ private:
 	C2D_Image mIcon;
 	std::string mName;
 	std::string mAuthor;
+	sdt::string mVersion;
 };
 
 #endif
