@@ -31,7 +31,7 @@ void SDMenu::Draw(void) const {
 
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	GFX::DrawBottom();
-	Gui::DrawString(0-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 237-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
+	Gui::DrawString(3-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 3-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
 	// Draw Buttons. ;P
 	//for (int i = 0; i < (int)this->mainButtons.size(); i++) {
 	//	if (this->Selection == i) {

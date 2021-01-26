@@ -59,7 +59,7 @@ void GFX::DrawTop(void) {
 
 void GFX::DrawBottom(void) {
 	Gui::ScreenDraw(Bottom);
-	Gui::DrawSprite(sprites, sprites_ItachiBot_idx, 0, 0, 0.8f, 0.8f);
+	Gui::DrawSprite(sprites, sprites_ItachiBot_idx, 0, 0, 1.0f, 1.0f);
 	Gui::Draw_Rect(0, 0, 320, 30, WHITET);
 	//Gui::Draw_Rect(0, 30, 320, 180, C2D_Color32(0, 120, 120, 255));
 	Gui::Draw_Rect(0, 210, 320, 30, WHITET);
