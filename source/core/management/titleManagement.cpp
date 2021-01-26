@@ -115,6 +115,3 @@ std::string TitleManagement::Author(void)
 	return mAuthor;
 }
 
-std::string TitleManagement::Version(void) {
-	return mVersion;
-}
