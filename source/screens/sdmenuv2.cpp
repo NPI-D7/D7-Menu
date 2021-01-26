@@ -22,16 +22,16 @@ void SDMenu::Draw(void) const {
 	//Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
 	Gui::DrawStringCentered(0, 2, 0.8f, BLACK, "D7-Menu -> SDMenu", 400);
     Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 140));
-	Gui::Draw_Rect(6, 46, 386, 110, C2D_Color32(180, 180, 180, 150));
+	Gui::Draw_Rect(6, 46, 388, 108, C2D_Color32(180, 180, 180, 150));
 	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, GameManagement::installedTitles[Selection]->name());
 	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, GameManagement::installedTitles[Selection]->Author());
 	
-        Gui::DrawString(397-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 237-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
+    
 
 
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	GFX::DrawBottom();
-
+	Gui::DrawString(0-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 237-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
 	// Draw Buttons. ;P
 	//for (int i = 0; i < (int)this->mainButtons.size(); i++) {
 	//	if (this->Selection == i) {
