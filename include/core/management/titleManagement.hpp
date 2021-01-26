@@ -56,7 +56,7 @@ private:
 	C2D_Image mIcon;
 	std::string mName;
 	std::string mAuthor;
-	sdt::string mVersion;
+	std::string mVersion;
 };
 
 #endif
