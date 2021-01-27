@@ -112,9 +112,9 @@ void GFX::DrawBetteryTop(){
 	snprintf(buf, 5, "%d%%", batteryPercent);
 		
 		
-		Gui::DrawString(300, 2, 0.8f, WHITE, buf);
+		Gui::DrawString(300, 2, 0.8f, BLACK, buf);
 
-	// For battery status
+	
  
 
 	if (batteryPercent >= 0 && batteryPercent <= 5) {

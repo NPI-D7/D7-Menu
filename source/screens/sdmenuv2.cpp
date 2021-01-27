@@ -18,8 +18,8 @@ SDMenu::SDMenu() {
 
 void SDMenu::Draw(void) const {
 	GFX::DrawTop();
-	//GFX::DrawBetteryTop();
-	//Gui::DrawString(0, 2 , 0.8f, WHITE, timeStr());
+	GFX::DrawBetteryTop();
+	//Gui::DrawString(0, 2 , 0.8f, BLACK, timeStr());
 	Gui::DrawStringCentered(0, 2, 0.8f, BLACK, "D7-Menu -> SDMenu", 400);
     Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 140));
 	Gui::Draw_Rect(6, 46, 388, 108, C2D_Color32(180, 180, 180, 150));
@@ -31,19 +31,9 @@ void SDMenu::Draw(void) const {
 
 	if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	GFX::DrawBottom();
-	Gui::DrawString(3-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 3-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, WHITE, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
-	// Draw Buttons. ;P
-	//for (int i = 0; i < (int)this->mainButtons.size(); i++) {
-	//	if (this->Selection == i) {
-	//		
-	//		Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
-    //                    C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
-	//	}
-	//	else {
-	//			C2D_DrawImageAt(GameManagement::installedTitles[i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
-//
-	//	} 
-	//}
+	Gui::DrawString(0, 3, 0.8f, BLACK, "Title: " + std::to_string(Selection + 1) + "/ " + std::to_string(maxTitles));
+	Gui::DrawString(3-Gui::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 3-Gui::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, BLACK, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
+	
 	for(int i=0;i<BOXES && i<maxTitles;i++) {
 		if(screenPos + i == Selection) {
 			Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
@@ -57,7 +47,7 @@ void SDMenu::Draw(void) const {
 	}
 
 	
-	Gui::DrawString(37, 214, 0.8f, WHITE, "Hold \uE046 to show controols!");
+	Gui::DrawString(37, 214, 0.8f, BLACK, "Hold \uE046 to show controols!");
 		
 		// Installed Title Icon.
 
@@ -79,13 +69,13 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 
 		
 		GFX::DrawTopSP();
-		Gui::DrawString(1, 30, 0.8f, WHITE, "\uE000: Start");
-		Gui::DrawString(1, 60, 0.8f, WHITE, "\uE006: Navigate");
+		Gui::DrawString(1, 30, 0.8f, BLACK, "\uE000: Start");
+		Gui::DrawString(1, 60, 0.8f, BLACK, "\uE006: Navigate");
 		
 		
-		Gui::DrawString(1, 90, 0.8f, WHITE, "Press \uE002 to go to MainMenu");
+		Gui::DrawString(1, 90, 0.8f, BLACK, "Press \uE002 to go to MainMenu");
 
-		Gui::DrawString(1, 120, 0.8f, WHITE, "Press \uE045 to exit!");
+		Gui::DrawString(1, 120, 0.8f, BLACK, "Press \uE045 to exit!");
         
 
 
