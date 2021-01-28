@@ -30,7 +30,7 @@
 #include "structs.hpp"
 #include "msg.hpp"
 #include "ptmu_x.h"
-#include "core/management/gameManagement.hpp"
+#include "TitleManager.hpp"
 #include "colors.hpp"
 #include "sound.h"
 
@@ -124,7 +124,7 @@ Result Init::Initialize() {
    	//}
 
 	Msg::DisplayMsg("Scanning sdcard...");
-	GameManagement::scanTitleID();
+	TitleManager::ScanSD();
 	//Msg::DisplayMsgPGR(2, 6, "Scanning SD Card...");
 	//GameManagement::scanTitleID(); 
 

@@ -1,7 +1,7 @@
 #include "common.hpp"
 #include "structs.hpp"
 
-#include "gameManagement.hpp"
+#include "TitleManager.hpp"
 
 #include <vector>
 
@@ -41,15 +41,15 @@ private:
                 {252, 157, 48, 48},
        
 	};
-    std::shared_ptr<TitleManagement> titleFromIndex(int i) const
+    std::shared_ptr<Title> titleFromIndex(int i) const
 	{
 		if (i == -2)
 		{
 			return nullptr;
 		}
-		else if ((size_t)i < GameManagement::installedTitles.size())
+		else if ((size_t)i < TitleManager::SD_Titles.size())
 		{
-			return GameManagement::installedTitles[i];
+			return TitleManager::SD_Titles[i];
 		}
 		return nullptr;
 	}
