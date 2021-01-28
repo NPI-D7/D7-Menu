@@ -13,7 +13,7 @@ extern bool exiting;
 
 SDMenu::SDMenu() {
 	
-	maxTitles = (int)TitleData.SD_Title.size();
+	maxTitles = (int)TitleManager.SD_Titles.size();
 }
 
 void SDMenu::Draw(void) const {
@@ -23,8 +23,8 @@ void SDMenu::Draw(void) const {
 	Gui::DrawStringCentered(0, 2, 0.8f, BLACK, "D7-Menu -> SDMenu", 400);
     Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 140));
 	Gui::Draw_Rect(6, 46, 388, 108, C2D_Color32(180, 180, 180, 150));
-	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, TitleData.SD_Title[Selection]->name());
-	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, TitleData.SD_Title[Selection]->Author());
+	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, TitleManager.SD_Titles[Selection]->name());
+	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, TitleManager.SD_Titles[Selection]->Author());
 	
     
 
@@ -37,12 +37,12 @@ void SDMenu::Draw(void) const {
 	for(int i=0;i<BOXES && i<maxTitles;i++) {
 		if(screenPos + i == Selection) {
 			Gui::Draw_Rect(mainButtons[i].x-2, mainButtons[i].y-2, 52, 52, BLUE);
-			C2D_DrawImageAt(TitleData.SD_Title[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
+			C2D_DrawImageAt(TitleManager.SD_Titles[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f);
 		}
 	
 		
 		
-		C2D_DrawImageAt(TitleData.SD_Title[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f); 
+		C2D_DrawImageAt(TitleManager.SD_Titles[screenPos+i]->icon(), mainButtons[i].x+0, mainButtons[i].y+0, 0.5f); 
 		// Installed Title Icon.
 	}
 
@@ -89,12 +89,12 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	
 
         if (hDown & KEY_A) {
-			if (!TitleData.SD_Title.empty()) {
+			if (!TitleManager.SD_Titles.empty()) {
 				u8 param[0x300];
 				u8 hmac[0x20];
 				memset(param, 0, sizeof(param));
 				memset(hmac, 0, sizeof(hmac));
-				APT_PrepareToDoApplicationJump(0, TitleData.SD_Title[Selection]->ID(), MEDIATYPE_SD);
+				APT_PrepareToDoApplicationJump(0, TitleManager.SD_Titles[Selection]->ID(), MEDIATYPE_SD);
 				APT_DoApplicationJump(param, sizeof(param), hmac);
 			}
 		}

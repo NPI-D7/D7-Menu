@@ -130,7 +130,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		if (touching(touch, this->MMButtons[0])) {
 			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
 		} else if (touching(touch, this->MMButtons[1])) {
-			Gui::setScreen(std::make_unique<gamecard>(), true, false);
+			
 		} else if (touching(touch, this->MMButtons[2])) {
         
                 }
