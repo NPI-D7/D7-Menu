@@ -7,5 +7,5 @@ namespace TitleManager
 {
     void ScanSD(void);
     
-    inline std::vector<std::shared_ptr<TitleManagement>> SD_Titles;
+    inline std::vector<std::shared_ptr<Title>> SD_Titles;
 }
