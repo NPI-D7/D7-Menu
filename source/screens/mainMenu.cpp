@@ -28,12 +28,10 @@
 
 
 #include "mainMenu.hpp"
-#include "gameManagement.hpp"
-#include "titleManagement.hpp"
+
 #include "colors.hpp"
 #include "utils.hpp"
-#include "gamecard.hpp"
-#include "nand.hpp"
+
 #include "sdmenuv2.hpp"
 #include "screenshot.h"
 
@@ -119,7 +117,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		if (this->Selection == 0) {
 			Gui::setScreen(std::make_unique<SDMenu>(), true, false);
 		} else if (this->Selection == 1) {
-			Gui::setScreen(std::make_unique<gamecard>(), true, false);
+			
 		} else if (this->Selection == 2) {
                    
                         
