@@ -48,7 +48,7 @@ void TitleManager::ScanSD(void)
     Result res = 0;
     u32 count = 0;
 
-    SD_Titles.clear();
+    sdtitles.clear();
 
     res = AM_GetTitleCount(MEDIATYPE_SD, &count);
 	if (R_FAILED(res))
@@ -70,11 +70,11 @@ void TitleManager::ScanSD(void)
 			auto title = std::make_shared<Title>();
 			if (title->load(ids[i], MEDIATYPE_SD))
 			{
-				SD_Titles.push_back(title);
+				sdtitles.push_back(title);
 			}
 		}
 	}
 	
-	std::sort(SD_Titles.begin(), SD_Titles.end(), [](std::shared_ptr<Title>& l, std::shared_ptr<Title>& r) { return l->ID() < r->ID(); });
+	std::sort(sdtitles.begin(), sdtitles.end(), [](std::shared_ptr<Title>& l, std::shared_ptr<Title>& r) { return l->ID() < r->ID(); });
 }
 
