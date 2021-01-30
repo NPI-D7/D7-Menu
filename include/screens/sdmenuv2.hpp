@@ -47,9 +47,9 @@ private:
 		{
 			return nullptr;
 		}
-		else if ((size_t)i < TitleManager.sdtitles.size())
+		else if ((size_t)i < TitleManager::sdtitles.size())
 		{
-			return TitleManager.sdtitles[i];
+			return TitleManager::sdtitles[i];
 		}
 		return nullptr;
 	}
