@@ -37,7 +37,7 @@ bool Title::load(u64 id, FS_MediaType media) {
     m_Name   = UTF16toUTF8((char16_t*)smdh->applicationTitles[1].shortDescription);
 	m_Author = UTF16toUTF8((char16_t*)smdh->applicationTitles[1].publisher);
 	titleload = true;
-	m_Icon     = loadTextureIcon(smdh);
+	m_Icon     = loadIconTex(smdh);
 	delete smdh;
 	return titleload;
 }
