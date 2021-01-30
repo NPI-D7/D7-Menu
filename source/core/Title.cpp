@@ -29,7 +29,7 @@ bool Title::load(u64 id, FS_MediaType media) {
     m_id = id;
     m_Media = media;
 
-    smdh_s* smdh = loadSMDH(lowid, highid, m_Media);
+    smdh_s* smdh = loadSMDH(lowid(), highid(), m_Media);
     if (smdh == NULL){
         return false;
     }
