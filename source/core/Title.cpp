@@ -44,12 +44,12 @@ bool Title::load(u64 id, FS_MediaType media) {
 
 u32 Title::highid(void)
 {
-	return (u32)(m_Id >> 32);
+	return (u32)(m_id >> 32);
 }
 
 u32 Title::lowid(void)
 {
-	return (u32)m_Id;
+	return (u32)m_id;
 }
 
 u64 Title::ID(void)
