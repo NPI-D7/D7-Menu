@@ -23,7 +23,7 @@ void SDMenu::Draw(void) const {
     Gui::Draw_Rect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 140));
 	Gui::Draw_Rect(6, 46, 388, 108, C2D_Color32(180, 180, 180, 150));
 	Gui::DrawStringCentered(0, 75, 0.7f, BLACK, TitleManager::sdtitles[Selection]->name());
-	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, TitleManager::sdtitles[Selection]->Author());
+	Gui::DrawStringCentered(0, 105, 0.7f, BLACK, TitleManager::sdtitles[Selection]->author());
 	
     
 
