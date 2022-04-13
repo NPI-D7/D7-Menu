@@ -1,6 +1,6 @@
 /*
-*   This file is part of Universal-Core-Example
-*   Copyright (C) 2020 SuperSaiyajinStackie
+*   This file is part of HomeMen3D
+*   Copyright (C) 2019 DeadPhoenix8091, Epicpkmn11, Flame, RocketRobz, StackZ, TotallyNotGuy
 *
 *   This program is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -24,55 +24,27 @@
 *         reasonable ways as different from the original version.
 */
 
-#ifndef GFX_HPP
-#define GFX_HPP
+#ifndef PTMU_X_H
+#define PTMU_X_H
 
-#include "gui.hpp"
-#include "sprites.h"
-#include "colors.hpp"
+// ptm:u functions not available in ctrulib.
 
-#include <citro2d.h>
-
-
-
-#include <3ds.h>
-#include <string>
-
-enum class ProgressBar {
-	Downloading,
-	Titleloader,
-	Installing
-};
-
-namespace UI {
-	// Progressbar.
-	void DrawProgressBar(u64 currentProgress, u64 totalProgress);
-	// Draw Button.
-}
-#define WHITE C2D_Color32(255, 255, 255, 255)
-
-namespace GFX {
-	// Draw Basic GUI.
-	void DrawTop(void);
-	void DrawBottom(void);
-	void DrawFileBrowseBG(bool isTop = true);
-	void DrawBetteryTop(void);
-	void DrawTopSP(void);
-	void DrawBottomSP(void);
-	
-	// Draw Sprites.
-	void DrawSprite(int img, int x, int y, float ScaleX = 1, float ScaleY = 1);
-}
-
- class progressBar
-    {
-        public:
-            progressBar(const uint32_t& _max);
-            void update(const uint32_t& _prog);
-            void draw();
-
-        private:
-            float max, prog, width;
-    };
-
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+Result ptmuxInit(void);
+
+void ptmuxExit(void);
+
+Result PTMUX_GetAdapterState(u8 *out);
+
+Result mcuInit(void);
+Result mcuExit(void);
+Result mcuGetBatteryLevel(u8* out);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* PTMU_X_H */

@@ -2,7 +2,7 @@ name: Build D7-Menu
 
 on:
   push:
-    branches-ignore: [translation]
+    branches-ignore: [translation, master]
   pull_request:
     branches: ["*"]
   release:

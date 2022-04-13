@@ -43,7 +43,7 @@
 #include <unistd.h>
 #include <iostream>
 
-extern bool touching(touchPosition touch, Structs::ButtonPos button);
+extern bool touching(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch);
 extern bool exiting;
 extern C2D_SpriteSheet sprites;
 

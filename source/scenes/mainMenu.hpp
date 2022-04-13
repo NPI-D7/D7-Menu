@@ -1,20 +1,16 @@
-
+#pragma once
 
 #ifndef MAINMENU_HPP
 #define MAINMENU_HPP
 
 #include "common.hpp"
-#include "structs.hpp"
-
-
-
 #include <vector>
 
 
-class MainMenu : public Screen {
+class MainMenu : public RenderD7::Scene {
 public:
 	void Draw(void) const override;
-	void Logic(u32 hDown, u32 hHeld, touchPosition touch) override;
+	void Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) override;
 	
 	
 private:

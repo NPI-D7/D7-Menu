@@ -1,6 +1,6 @@
 /*
-*   This file is part of Universal-Updater
-*   Copyright (C) 2019-2020 Universal-Team
+*   This file is part of HomeMen3D
+*   Copyright (C) 2019 DeadPhoenix8091, Epicpkmn11, Flame, RocketRobz, StackZ, TotallyNotGuy
 *
 *   This program is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -24,17 +24,22 @@
 *         reasonable ways as different from the original version.
 */
 
-#ifndef _UNIVERSAL_UPDATER_MSG_HPP
-#define UNIVERSAL_UPDATER_MSG_HPP
+#ifndef STRUCTS_HPP
+#define STRUCTS_HPP
 
 #include <string>
 
-namespace Msg {
-	void DisplayMsg(std::string text);
-	void DisplayInfo(std::string inftxt);
-	void DisplayMsgPGR(u64 current, u64 total);
-
-
-}
+class Structs
+{
+public:
+	struct ButtonPos {
+		int x;
+		int y;
+		int w;
+		int h;
+		int link;
+	};
+private:
+};
 
 #endif

@@ -56,7 +56,7 @@ void SDMenu::Draw(void) const {
 }
 
 
-void SDMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
+void SDMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 	// Press Start to exit the app.
 	if (hDown & KEY_START) {
 		fadecolor = 0;
