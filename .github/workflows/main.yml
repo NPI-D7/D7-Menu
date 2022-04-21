@@ -101,6 +101,11 @@ jobs:
           git config --global user.email "nintenplayid7@gmail.com"
           git config --global user.name "Tobi-D7"
           git clone --depth 1 https://${{ secrets.TOKEN }}@github.com/NPI-D7/nightlys.git
+          cd nightlys
+          sudo chmod +x nightlytool
+          echo running
+          ./nightlytool management/D7-Menu.ini D7-Menu NPI-D7 nightlys v$CURRENT_DATE $COMMIT_HASH "\\$COMMIT_SUBJECT\\$COMMIT_MESSAGE\\\\" 0 "$AUTHOR_NAME"
+          cd ..
           mkdir -p nightlys/builds/D7-Menu/
           cd nightlys/builds/D7-Menu/
           qrencode -o D7-Menu.png https://github.com/NPI-D7/nightlys/raw/v$CURRENT_DATE/builds/D7-Menu/D7-Menu.cia
@@ -110,21 +115,21 @@ jobs:
           git commit -m "D7-Menu | $COMMIT_HASH"
           git tag v$CURRENT_DATE
           git push origin master v$CURRENT_DATE
-      #- name: Release to NPI-D7/nightlys
-      #  run: |
-      #    AUTH_HEADER="Authorization: token ${{ secrets.TOKEN }}"
-      #    CONTENT_TYPE="Content-Type: application/json"
-      #    API_URL="https://api.github.com/repos/NPI-D7/nightlys/releases"
-      #    RELEASE_INFO="{\"tag_name\": \"v${{ steps.commit.outputs.current_date }}\", \"name\": \"D7-Menu | $COMMIT_HASH\", \"body\": \"$AUTHOR_NAME - $COMMIT_MESSAGE\", \"prerelease\": true}"
-      #    RESPONSE=$(curl -XPOST -H "$AUTH_HEADER" -H "$CONTENT_TYPE" "$API_URL" -d "$RELEASE_INFO")
-      #    ID=$(echo $RESPONSE | jq --raw-output '.id')
-      #    for file in ${{ github.workspace }}/build/*; do
-      #      AUTH_HEADER="Authorization: token ${{ secrets.TOKEN }}"
-      #      CONTENT_LENGTH="Content-Length: $(stat -c%s $file)"
-      #      CONTENT_TYPE="Content-Type: application/7z-x-compressed"
-      #      UPLOAD_URL="https://uploads.github.com/repos/NPI-D7/nigtlys/releases/$ID/assets?name=$(basename $file)"
-      #      curl -XPOST -H "$AUTH_HEADER" -H "$CONTENT_LENGTH" -H "$CONTENT_TYPE" --upload-file "$file" "$UPLOAD_URL"
-      #    done
+      - name: Release to NPI-D7/nightlys
+        run: |
+          AUTH_HEADER="Authorization: token ${{ secrets.TOKEN }}"
+          CONTENT_TYPE="Content-Type: application/json"
+          API_URL="https://api.github.com/repos/NPI-D7/nightlys/releases"
+          RELEASE_INFO="{\"tag_name\": \"v${{ steps.commit.outputs.current_date }}\", \"name\": \"D7-Menu | $COMMIT_HASH\", \"body\": \"$AUTHOR_NAME - $COMMIT_MESSAGE\", \"prerelease\": true}"
+          RESPONSE=$(curl -XPOST -H "$AUTH_HEADER" -H "$CONTENT_TYPE" "$API_URL" -d "$RELEASE_INFO")
+          ID=$(echo $RESPONSE | jq --raw-output '.id')
+          for file in ${{ github.workspace }}/build/*; do
+            AUTH_HEADER="Authorization: token ${{ secrets.TOKEN }}"
+            CONTENT_LENGTH="Content-Length: $(stat -c%s $file)"
+            CONTENT_TYPE="Content-Type: application/7z-x-compressed"
+            UPLOAD_URL="https://uploads.github.com/repos/NPI-D7/nigtlys/releases/$ID/assets?name=$(basename $file)"
+            curl -XPOST -H "$AUTH_HEADER" -H "$CONTENT_LENGTH" -H "$CONTENT_TYPE" --upload-file "$file" "$UPLOAD_URL"
+          done
 # lol
   send_webhook:
     runs-on: ubuntu-latest

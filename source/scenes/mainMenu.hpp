@@ -16,7 +16,7 @@ public:
 private:
 
 	int Selection = 0;
-	std::vector<Structs::ButtonPos> MMButtons = {
+	std::vector<RenderD7::TLBtn> MMButtons = {
         {50, 40, 220, 40},
         {50, 100, 220, 40},
         {50, 160, 220, 40},

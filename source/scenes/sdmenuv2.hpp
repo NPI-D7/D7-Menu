@@ -23,7 +23,7 @@ private:
 	mutable int screenPosList = 0;
 	mutable int selection = 0;
 	int Selection = 0;
-	std::vector<Structs::ButtonPos> mainButtons = {
+	std::vector<RenderD7::TLBtn> mainButtons = {
 		{20, 37, 48, 48},
         {78, 37, 48, 48},
         {136, 37, 48, 48},
