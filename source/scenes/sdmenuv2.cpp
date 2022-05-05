@@ -27,7 +27,7 @@ void SDMenu::Draw(void) const {
     
 
 
-	if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
+	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	RenderD7::OnScreen(Bottom);
 	RenderD7::DrawText(2, 3, 0.8f, BLACK, "Title: " + std::to_string(Selection + 1) + "/ " + std::to_string(maxTitles));
 	//RenderD7::DrawText(3-RenderD7::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 3-RenderD7::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, BLACK, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
@@ -51,7 +51,7 @@ void SDMenu::Draw(void) const {
 
 
 
-	if (fadealpha > 0) RenderD7::DrawRect(0, 0, 320, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
+	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 320, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 }
 
 
