@@ -1,6 +1,3 @@
-#ifndef _UNIVERSAL_UPDATER_SOUND_H
-#define _UNIVERSAL_UPDATER_SOUND_H
-
 #include <3ds.h>
 #include <string>
 
@@ -17,5 +14,3 @@ private:
 	u8* data = NULL;
 	int chnl;
 };
-
-#endif

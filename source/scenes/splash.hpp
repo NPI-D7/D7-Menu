@@ -9,5 +9,3 @@ public:
 private:
 	int delay = 0;
 };
-
-#endif

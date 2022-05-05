@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef MAINMENU_HPP
-#define MAINMENU_HPP
-
 #include "common.hpp"
 #include <vector>
 
@@ -25,5 +22,3 @@ private:
 	
 };
 
-
-#endif

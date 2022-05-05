@@ -1,6 +1,3 @@
-#ifndef _3D_SHELL_FS_H
-#define _3D_SHELL_FS_H
-
 #include <3ds.h>
 
 extern FS_Archive archive, sdmc_archive, nand_archive;
@@ -26,5 +23,3 @@ Result FS_RenameDir(FS_Archive archive, const char *old_dirname, const char *new
 Result FS_Read(FS_Archive archive, const char *path, u64 size, void *buf);
 Result FS_Write(FS_Archive archive, const char *path, const void *buf);
 char *FS_GetFileTimestamp(const char *path);
-
-#endif
