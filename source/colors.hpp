@@ -34,5 +34,3 @@
 #define COOLWHITE RenderD7::Color::Hex("#eeeeee")
 
 typedef u32 Color;
-
-#endif
