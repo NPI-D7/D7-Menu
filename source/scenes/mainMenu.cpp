@@ -36,6 +36,7 @@ void MainMenu::Draw(void) const {
 
 
 	//GFX::DrawBottom();
+	RenderD7::OnScreen(Bottom);
 	
 	
 	for (int i = 0; i < (int)this->MMButtons.size(); i++) {

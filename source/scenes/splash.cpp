@@ -15,7 +15,7 @@ void Stack::Draw(void) const {
 	RenderD7::DrawTextCentered(0, 40, 0.8f, BLACK, "DSGameCards ar not supported yet.\n\nBefore removing a gamecard\n\ngo back to the MainMenu.", 400);
 	RenderD7::DrawTextCentered(0, 214, 0.8, BLACK, "Universal-Team, Tobi", 400);
 	//if (fadealpha > 0) Gui::Draw_Rect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
-	RenderD7::OnScreen(Top);
+	RenderD7::OnScreen(Bottom);
 	RenderD7::DrawRect(0, 0, 320, 240, COOLWHITE);
 	//Gui::DrawSprite(sprites, sprites_ulogo_idx, -10, 20, 0.65, 0.65);
 	
