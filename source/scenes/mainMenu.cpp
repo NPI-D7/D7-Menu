@@ -15,7 +15,7 @@
 #include <iostream>
 
 //extern bool touching(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch);
-extern bool exiting;
+//extern bool exiting;
 
 
 
@@ -64,9 +64,9 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 
 
 	if (hDown & KEY_START) {
-		fadecolor = 0;
+		/*fadecolor = 0;
 		fadeout = true;
-		exiting = true;
+		exiting = true;*/
 	}
 	if (hHeld & KEY_SELECT){
 		RenderD7::OnScreen(Top);

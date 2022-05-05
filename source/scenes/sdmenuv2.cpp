@@ -8,7 +8,7 @@
 #define BOXES 15
 
 //extern bool touching(touchPosition touch, Structs::ButtonPos button);
-extern bool exiting;
+//extern bool exiting;
 
 SDMenu::SDMenu() {
 	
@@ -58,9 +58,9 @@ void SDMenu::Draw(void) const {
 void SDMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 	// Press Start to exit the app.
 	if (hDown & KEY_START) {
-		fadecolor = 0;
+		/*fadecolor = 0;
 		fadeout = true;
-		exiting = true;
+		exiting = true;*/
 	}
 
 	if (hHeld & KEY_SELECT) {
