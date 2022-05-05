@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <iostream>
 
-extern bool touching(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch);
+//extern bool touching(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch);
 extern bool exiting;
 
 
@@ -36,7 +36,7 @@ void MainMenu::Draw(void) const {
 	
 
 
-	GFX::DrawBottom();
+	//GFX::DrawBottom();
 	
 	
 	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
@@ -59,7 +59,7 @@ void MainMenu::Draw(void) const {
 }
 
 
-void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
+void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 
 
 
@@ -89,7 +89,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 	}
 
 	// Touch the button to enter example screen.
-	if (hDown & KEY_TOUCH) {
+	/*if (hDown & KEY_TOUCH) {
 		if (touching(touch, this->MMButtons[0])) {
 			RenderD7::Scene::Load(std::make_unique<SDMenu>());
 		} else if (touching(touch, this->MMButtons[1])) {
@@ -97,7 +97,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, touchPosition touch) {
 		} else if (touching(touch, this->MMButtons[2])) {
         
                 }
-	}
+	}*/
      //   
 	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
 	if (hDown & KEY_DOWN) {

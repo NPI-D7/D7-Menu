@@ -7,7 +7,7 @@
 
 #define BOXES 15
 
-extern bool touching(touchPosition touch, Structs::ButtonPos button);
+//extern bool touching(touchPosition touch, Structs::ButtonPos button);
 extern bool exiting;
 
 SDMenu::SDMenu() {
