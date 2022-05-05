@@ -2,7 +2,6 @@
 #include "sdmenuv2.hpp"
 #include "mainMenu.hpp"
 #include  "utils.hpp"
-#include "screenshot.h"
 
 
 #define BOXES 15
