@@ -78,7 +78,7 @@ TARGET		:=	D7-Menu
 BUILD		:=	build
 UNIVCORE	:= 	RenderD7 RenderD7/internal RenderD7/external
 
-SOURCES		:=	test test/decoder $(UNIVCORE) source source/gui source/scenes source/core source/utils 
+SOURCES		:=	test test/decoder $(UNIVCORE) source source/gui source/scenes D7-Menu-Core 
 DATA		:=	data
 INCLUDES	:= $(SOURCES)
 GRAPHICS	:=	assets/gfx
