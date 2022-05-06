@@ -24,9 +24,6 @@ void SDMenu::Draw(void) const {
 	RenderD7::DrawRect(6, 46, 388, 108, C2D_Color32(180, 180, 180, 150));
 	RenderD7::DrawTextCentered(0, 75, 0.7f, BLACK, TitleManager::sdtitles[Selection]->name());
 	RenderD7::DrawTextCentered(0, 105, 0.7f, BLACK, TitleManager::sdtitles[Selection]->author());
-	
-    
-
 
 	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	RenderD7::OnScreen(Bottom);
