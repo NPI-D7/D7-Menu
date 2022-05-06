@@ -16,6 +16,8 @@ SDMenu::SDMenu() {
 
 void SDMenu::Draw(void) const {
 	RenderD7::OnScreen(Top);
+	RenderD7::DrawRect(0, 0, 400, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 400, 30, COOLDARK);
 	//RenderD7::DrawText(0, 2 , 0.8f, BLACK, timeStr());
 	RenderD7::DrawTextCentered(0, 2, 0.8f, BLACK, "D7-Menu -> SDMenu", 400);
     RenderD7::DrawRect(10, 50, 380, 100, C2D_Color32(130, 130, 130, 140));
@@ -28,7 +30,9 @@ void SDMenu::Draw(void) const {
 
 	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
 	RenderD7::OnScreen(Bottom);
-	RenderD7::DrawText(2, 3, 0.8f, BLACK, "Title: " + std::to_string(Selection + 1) + "/ " + std::to_string(maxTitles));
+	RenderD7::DrawRect(0, 0, 320, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 320, 30, COOLDARK);
+	RenderD7::DrawText(2, 3, 0.8f, COOLWHITE, "Title: " + std::to_string(Selection + 1) + "/ " + std::to_string(maxTitles));
 	//RenderD7::DrawText(3-RenderD7::GetStringWidth(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 3-RenderD7::GetStringHeight(0.8f, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles)), 0.8f, BLACK, "Titles: " + std::to_string(Selection + 1) + " / " + std::to_string(maxTitles));
 	
 	for(int i=0;i<BOXES && i<maxTitles;i++) {

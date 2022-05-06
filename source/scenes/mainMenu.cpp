@@ -24,8 +24,9 @@ void MainMenu::Draw(void) const {
 	RenderD7::OnScreen(Top);
 	
 	//GFX::DrawBetteryTop();
-	
-	RenderD7::DrawTextCentered(0, 2, 0.8f, BLACK, "D7-Menu", 400);
+	RenderD7::DrawRect(0, 0, 400, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 400, 30, COOLDARK);
+	RenderD7::DrawTextCentered(0, 2, 0.8f, COOLWHITE, "D7-Menu", 400);
 
 	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/
 	 
@@ -37,7 +38,8 @@ void MainMenu::Draw(void) const {
 
 	//GFX::DrawBottom();
 	RenderD7::OnScreen(Bottom);
-	
+	RenderD7::DrawRect(0, 0, 320, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 320, 30, COOLDARK);
 	
 	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
 		if (this->Selection == i) {
