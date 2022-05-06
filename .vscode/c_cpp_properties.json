@@ -3,15 +3,14 @@
         {
             "name": "3DS",
             "includePath": [
-                "${workspaceFolder}\\**",
-                "${workspaceFolder}\\source\\**",
-                "${workspaceFolder}\\RenderD7\\**",
-                "${workspaceFolder}\\D7-Menu-Core\\**",
-                "C:\\devkitPro\\libctru\\include\\**",
-                "C:\\devkitPro\\portlibs\\3ds\\include\\**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/RenderD7/**",
+                "${workspaceFolder}/D7-Menu-Core/**",
+                "/opt/devkitpro/libctru/include/**",
+                "/opt/devkitpro/portlibs/3ds/include/**"
             ],
-            "intelliSenseMode": "msvc-x64",
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe",
+            "intelliSenseMode": "gcc-arm",
+            
             "cStandard": "c17",
             "cppStandard": "c++20"
         }
