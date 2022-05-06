@@ -24,7 +24,7 @@ void MainMenu::Draw(void) const {
 	RenderD7::OnScreen(Top);
 	
 	//GFX::DrawBetteryTop();
-	RenderD7::DrawRect(0, 0, 400, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 400, 240, COOLWHITE);
 	RenderD7::DrawRect(0, 0, 400, 30, COOLDARK);
 	RenderD7::DrawTextCentered(0, 2, 0.8f, COOLWHITE, "D7-Menu", 400);
 
@@ -38,14 +38,15 @@ void MainMenu::Draw(void) const {
 
 	//GFX::DrawBottom();
 	RenderD7::OnScreen(Bottom);
-	RenderD7::DrawRect(0, 0, 320, 240, COOLDARK);
+	RenderD7::DrawRect(0, 0, 320, 240, COOLWHITE);
 	RenderD7::DrawRect(0, 0, 320, 30, COOLDARK);
 	
 	for (int i = 0; i < (int)this->MMButtons.size(); i++) {
 		if (this->Selection == i) {
-			RenderD7::DrawRect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, BUTTONSELECTEDT);
+			RenderD7::DrawRect(this->MMButtons[i].x-2, this->MMButtons[i].y-2, this->MMButtons[i].w+4, this->MMButtons[i].h+4, BUTTONSELECTCOLOR);
+			RenderD7::DrawRect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, BUTTONUNSELECTCOLOR);
 		} else {
-			RenderD7::DrawRect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, BUTTONT);
+			RenderD7::DrawRect(this->MMButtons[i].x, this->MMButtons[i].y, this->MMButtons[i].w, this->MMButtons[i].h, BUTTONUNSELECTCOLOR);
 		}
 	}
 	RenderD7::DrawTextCentered(0, MMButtons[0].y+10, 0.6f, BLACK, "SDCard");
