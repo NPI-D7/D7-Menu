@@ -50,7 +50,7 @@ void MainMenu::Draw(void) const {
 	}
 	RenderD7::DrawTextCentered(0, MMButtons[0].y+10, 0.6f, BLACK, "SDCard");
 	RenderD7::DrawTextCentered(0, MMButtons[1].y+10, 0.6f, BLACK, "GameCard");
-	RenderD7::DrawTextCentered(0, MMButtons[2].y+10, 0.6f, BLACK, "???");
+	RenderD7::DrawTextCentered(0, MMButtons[2].y+10, 0.6f, BLACK, "Exit");
 
 
 	RenderD7::DrawText(37, 214, 0.8f, BLACK, "Hold \uE046 to show controols!");
@@ -69,6 +69,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 		/*fadecolor = 0;
 		fadeout = true;
 		exiting = true;*/
+		RenderD7::ExitApp();
 	}
 	if (hHeld & KEY_SELECT){
 		RenderD7::OnScreen(Top);
@@ -84,7 +85,7 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 		} else if (this->Selection == 1) {
 			
 		} else if (this->Selection == 2) {
-                   
+                   RenderD7::ExitApp();
                         
                 }
      

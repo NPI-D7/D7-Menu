@@ -64,6 +64,7 @@ void SDMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 		/*fadecolor = 0;
 		fadeout = true;
 		exiting = true;*/
+		RenderD7::ExitApp();
 	}
 
 	if (hHeld & KEY_SELECT) {
