@@ -1,6 +1,5 @@
 #include "mainMenu.hpp"
 #include "splash.hpp"
-#include "sprites.h"
 #include "utils.hpp"
 
 extern RenderD7::Sheet sprites;
