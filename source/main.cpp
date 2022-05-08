@@ -9,6 +9,7 @@ int main()
     mkdir("sdmc:/D7-Menu/cache", 0777);
     RenderD7::Msg::Display("D7-Menu", "Scanning SD", Top);
     TitleManager::ScanSD("sdmc:/D7-Menu/");
+    TitleManager::ScanCard();
     RenderD7::Scene::Load(std::make_unique<Stack>());
     while (RenderD7::MainLoop())
     {

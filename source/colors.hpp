@@ -11,7 +11,7 @@
 #define BARCOLOR        C2D_Color32(0, 0, 180, 255)
 #define BGCOLOR         C2D_Color32(0, 0, 0, 255)
 #define BUTTONSELECTCOLOR   C2D_Color32(61, 61, 61, 255)
-#define BUTTONUNSELECTCOLOR C2D_Color32(61, 61, 61, 160)
+#define BUTTONUNSELECTCOLOR C2D_Color32(61, 61, 61, 255)
 
 #define BUTTONSELECTED C2D_Color32(0, 170, 170, 255)
 #define BUTTON C2D_Color32(0, 170, 100, 255)

@@ -1,0 +1,98 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/Tobi/D7-Menu'
+ 
+fatal: No names found, cannot describe anything.
+
+fatal: No names found, cannot describe anything.
+
+fatal: No names found, cannot describe anything.
+
+[ -d build ] || mkdir -p build
+ 
+make --no-print-directory -C build -f /home/Tobi/D7-Menu/Makefile
+ 
+fatal: No names found, cannot describe anything.
+
+fatal: No names found, cannot describe anything.
+
+fatal: No names found, cannot describe anything.
+
+echo log.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/log.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/log.cpp -o log.o 
+ 
+echo renderd7.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/renderd7.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/renderd7.cpp -o renderd7.o 
+echo sound.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/sound.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/sound.cpp -o sound.o 
+echo Clock.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/Clock.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/internal/Clock.cpp -o Clock.o 
+ 
+echo Time.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/Time.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/internal/Time.cpp -o Time.o 
+ 
+echo lang.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/lang.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/internal/lang.cpp -o lang.o 
+ 
+echo thread.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/thread.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/internal/thread.cpp -o thread.o 
+ 
+echo lodepng.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/lodepng.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/RenderD7/external/lodepng.cpp -o lodepng.o 
+ 
+echo main.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/main.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/source/main.cpp -o main.o 
+ 
+echo pgrbar.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/pgrbar.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/source/pgrbar.cpp -o pgrbar.o 
+ 
+echo mainMenu.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/mainMenu.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/source/scenes/mainMenu.cpp -o mainMenu.o 
+ 
+echo sdmenuv2.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/sdmenuv2.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp -o sdmenuv2.o 
+ 
+echo splash.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/splash.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/source/scenes/splash.cpp -o splash.o 
+ 
+echo Title.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/Title.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/D7-Menu-Core/Title.cpp -o Title.o 
+ 
+echo TitleManager.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/TitleManager.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp -o TitleManager.o 
+ 
+echo cache.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/cache.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/D7-Menu-Core/cache.cpp -o cache.o 
+ 
+echo smdh.cpp
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/smdh.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp -o smdh.o 
+ 
+echo utils.cpp
+ 
+arm-none-eabi-g++ -MMD -MP -MF /home/Tobi/D7-Menu/build/utils.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17 -c /home/Tobi/D7-Menu/D7-Menu-Core/utils.cpp -o utils.o 
+ 
+echo fs.c
+arm-none-eabi-gcc -MMD -MP -MF /home/Tobi/D7-Menu/build/fs.d -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"9be3d31\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -c /home/Tobi/D7-Menu/RenderD7/external/fs.c -o fs.o 
+ 
+echo linking D7-Menu.elf
+arm-none-eabi-g++ -specs=3dsx.specs -g -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -Wl,-Map,D7-Menu.map    log.o renderd7.o sound.o Clock.o Time.o lang.o thread.o lodepng.o main.o pgrbar.o mainMenu.o sdmenuv2.o splash.o Title.o TitleManager.o cache.o smdh.o utils.o fs.o  -L/opt/devkitpro/portlibs/3ds/lib -L/opt/devkitpro/libctru/lib -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -larchive -lbz2 -llzma -lm -lz -lcitro2d -lcitro3d -lSDL_mixer -lSDL -lmpg123 -lvorbisidec -logg -lmikmod -lmad -lctru -lstdc++ -o /home/Tobi/D7-Menu/D7-Menu.elf
+arm-none-eabi-gcc-nm -CSn /home/Tobi/D7-Menu/D7-Menu.elf > D7-Menu.lst
+ 
+smdhtool --create "D7-Menu" "Apploader" "Tobi" /home/Tobi/D7-Menu/app/icon.png /home/Tobi/D7-Menu/D7-Menu.smdh
+echo built ... D7-Menu.smdh
+ 
+bannertool.exe makebanner -i "../app/banner.png" -a "../app/BannerAudio.wav" -o "../app/banner.bin"
+bannertool.exe makesmdh -i "../app/icon.png" -s "D7-Menu" -l "Apploader" -p "Tobi" -o "../app/icon.bin"
+makerom.exe -f cia -target t -exefslogo -o "../D7-Menu.cia" -elf "../D7-Menu.elf" -rsf "../app/build-cia.rsf" -banner "../app/banner.bin" -icon "../app/icon.bin" -logo "../app/logo.bcma.lz" -DAPP_ROMFS="/home/Tobi/D7-Menu/romfs" -major 0 -minor 0 -micro 0 -DAPP_VERSION_MAJOR="0"
+3dsxtool /home/Tobi/D7-Menu/D7-Menu.elf /home/Tobi/D7-Menu/D7-Menu.3dsx --smdh=/home/Tobi/D7-Menu/D7-Menu.smdh --romfs=/home/Tobi/D7-Menu/romfs
+echo built ... D7-Menu.3dsx
+ 
+make: Leaving directory '/home/Tobi/D7-Menu'
+ 

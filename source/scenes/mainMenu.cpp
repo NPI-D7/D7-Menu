@@ -5,38 +5,18 @@
 
 #include "sdmenuv2.hpp"
 
-
-
-//#include "msg.hpp"
-
-
 #include <unistd.h>
 #include <iostream>
-
-//extern bool touching(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch);
-//extern bool exiting;
-
-
-
 
 void MainMenu::Draw(void) const {
 	
 	RenderD7::OnScreen(Top);
 	
-	//GFX::DrawBetteryTop();
 	RenderD7::DrawRect(0, 0, 400, 240, COOLWHITE);
 	RenderD7::DrawRect(0, 0, 400, 30, COOLDARK);
 	RenderD7::DrawTextCentered(0, 2, 0.8f, COOLWHITE, "D7-Menu", 400);
-
-	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/
-	 
-
-
-	
-	
-
-
-	//GFX::DrawBottom();
+	D7TM::CardLoop();
+	RenderD7::DrawText(2, 50, 0.7f, RenderD7::Color::Hex("#111111"), "State: " + CardStatus);
 	RenderD7::OnScreen(Bottom);
 	RenderD7::DrawRect(0, 0, 320, 240, COOLWHITE);
 	RenderD7::DrawRect(0, 0, 320, 30, COOLDARK);
@@ -50,15 +30,11 @@ void MainMenu::Draw(void) const {
 		}
 	}
 	RenderD7::DrawTextCentered(0, MMButtons[0].y+10, 0.6f, BLACK, "SDCard");
-	RenderD7::DrawTextCentered(0, MMButtons[1].y+10, 0.6f, BLACK, "GameCard");
+	RenderD7::DrawTextCentered(0, MMButtons[1].y+10, 0.6f, BLACK, "Nand");
 	RenderD7::DrawTextCentered(0, MMButtons[2].y+10, 0.6f, BLACK, "Exit");
 
 
 	RenderD7::DrawText(37, 214, 0.8f, BLACK, "Hold \uE046 to show controols!");
-	// Draw Buttons. ;P
-
-	//if (fadealpha > 0) RenderD7::DrawRect(0, 0, 400, 240, C2D_Color32(fadecolor, fadecolor, fadecolor, fadealpha)); // Fade in/out effect
-
 }
 
 
@@ -67,9 +43,6 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 
 
 	if (hDown & KEY_START) {
-		/*fadecolor = 0;
-		fadeout = true;
-		exiting = true;*/
 		RenderD7::ExitApp();
 	}
 	if (hHeld & KEY_SELECT){
@@ -86,34 +59,28 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
 		} else if (this->Selection == 1) {
 			
 		} else if (this->Selection == 2) {
-                   RenderD7::ExitApp();
-                        
-                }
+           RenderD7::ExitApp();
+                
+        }
      
 	}
+	if (d7_hDown & KEY_TOUCH && RenderD7::touchTLBtn(d7_touch, MMButtons[0]))
+	{
+		RenderD7::Scene::Load(std::make_unique<SDMenu>());
+	}
+	if (d7_hDown & KEY_TOUCH && RenderD7::touchTLBtn(d7_touch, MMButtons[1]))
+	{
 
-	// Touch the button to enter example screen.
-	/*if (hDown & KEY_TOUCH) {
-		if (touching(touch, this->MMButtons[0])) {
-			RenderD7::Scene::Load(std::make_unique<SDMenu>());
-		} else if (touching(touch, this->MMButtons[1])) {
-			
-		} else if (touching(touch, this->MMButtons[2])) {
-        
-                }
-	}*/
-     //   
-	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
+	}
+	if (d7_hDown & KEY_TOUCH && RenderD7::touchTLBtn(d7_touch, MMButtons[2]))
+	{
+		RenderD7::ExitApp();
+	}
 	if (hDown & KEY_DOWN) {
 		if (this->Selection < (int)this->MMButtons.size() - 1)	this->Selection++;
 	}
 
-	// Press Up to go one entry up.
 	if (hDown & KEY_UP) {
 		if (this->Selection > 0)	this->Selection--;
 	}
-	
-
-	// Press Down to go one entry down. - 1 -> Because we don't want to go one Entry after the actual Buttons.
-	
 }

@@ -1,18 +1,26 @@
 {
     "configurations": [
         {
-            "name": "3DS",
+            "name": "3DS | Windows",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/RenderD7/**",
                 "${workspaceFolder}/D7-Menu-Core/**",
-                "/opt/devkitpro/libctru/include/**",
-                "/opt/devkitpro/portlibs/3ds/include/**"
+                "/devkitpro/libctru/include/**",
+                "/devkitpro/portlibs/3ds/include/**",
+                "/devkitpro/devkitARM/include/**",
+                "/devkitpro/devkitARM/arm-none-eabi/include/**"
             ],
-            "intelliSenseMode": "gcc-arm",
-            
-            "cStandard": "c17",
-            "cppStandard": "c++20"
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/devkitpro/devkitARM/bin/arm-none-eabi-g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "forcedInclude": [],
+            "browse": {
+                "path": []
+            }
         }
     ],
     "version": 4
