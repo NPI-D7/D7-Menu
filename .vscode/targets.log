@@ -19,12 +19,11 @@ fatal: No names found, cannot describe anything.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sun May  8 05:39:22 2022
+# Make data base, printed on Mon May  9 15:18:05 2022
 
 # Variables
+ 
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 39)
 MAKEROM = makerom.exe
 # environment
@@ -48,7 +47,7 @@ OFILES =    log.o renderd7.o sound.o Clock.o Time.o lang.o thread.o lodepng.o ma
 # environment
 LOCALAPPDATA = C:\Users\Tobi\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2e398ab4-6805-4bc4-bc3d-a25bf7b3f02d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c678be43-ea6b-48a2-8116-36f258cd9629-sock
 # environment
 VPATH = /home/Tobi/D7-Menu/test /home/Tobi/D7-Menu/test/decoder /home/Tobi/D7-Menu/RenderD7 /home/Tobi/D7-Menu/RenderD7/internal /home/Tobi/D7-Menu/RenderD7/external /home/Tobi/D7-Menu/source /home/Tobi/D7-Menu/source/gui /home/Tobi/D7-Menu/source/scenes /home/Tobi/D7-Menu/D7-Menu-Core /home/Tobi/D7-Menu/assets/gfx /home/Tobi/D7-Menu/data
 # environment
@@ -72,9 +71,7 @@ OFILES_BIN = $(subst ,,  )
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2036_XUNNKCRXQVBNYMYT
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14160_GDZTHOEYDCQDELRE
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -138,6 +135,7 @@ MFLAGS = -pqrR --no-print-directory
 !C: = c:\Users\Tobi\D7-Menu
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
+ 
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -151,7 +149,7 @@ ASFLAGS := -g -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2036
+VSCODE_PID = 14160
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 28)
@@ -178,6 +176,8 @@ APP_ICON = /home/Tobi/D7-Menu/app/icon.png
 CTRULIB = $(DEVKITPRO)/libctru
 # environment
 INCLUDE = -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build
+# environment
+ONEDRIVECONSUMER = C:\Users\Tobi\OneDrive
 # default
 MAKE_HOST := x86_64-pc-msys
 # environment
@@ -229,6 +229,7 @@ USERNAME = Tobi
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # automatic
+ 
 ?F = $(notdir $?)
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 50)
 bin2o = 	bin2s -a 4 -H `(echo $(<F) | tr . _)`.h $< | $(AS) -o $(<F).o
@@ -285,7 +286,7 @@ BNR_AUDIO := app/BannerAudio.wav
 # environment
 APPDATA = C:\Users\Tobi\AppData\Roaming
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 106)
-CFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"43c17af\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1
+CFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"8808bce\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1
 # environment
 HOMEDRIVE = C:
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 79)
@@ -326,6 +327,7 @@ ROMFS := romfs
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
+ 
 # environment
 LD = arm-none-eabi-g++
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 77)
@@ -333,9 +335,9 @@ TARGET := D7-Menu
 # environment
 SESSIONNAME = Console
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 52)
-GIT_VER := 43c17af
+GIT_VER := 8808bce
 # makefile (from '/home/Tobi/D7-Menu/Makefile', line 108)
-CXXFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"43c17af\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17
+CXXFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"8808bce\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 26)
 STRIP := arm-none-eabi-strip
 # default
@@ -363,7 +365,7 @@ _3DSXDEPS = /home/Tobi/D7-Menu/D7-Menu.smdh
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=165/1024=16%, Rehash=0, Collisions=24/375=6%
+# Load=164/1024=16%, Rehash=0, Collisions=22/365=6%
 
 # Pattern-specific Variable Values
 
@@ -373,6 +375,8 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 
 # C:/devkitPro/libctru/include/3ds/gpu (device 1820687712, inode 281474976860703): 8 files, 6 impossibilities.
 # /home/Tobi/D7-Menu/source/scenes (device 1820687712, inode 562949953532184): 8 files, no impossibilities.
+# /opt/devkitpro/devkitARM (device 1820687712, inode 562949953566684): No files, no impossibilities so far.
+# /home/Tobi/D7-Menu/app (device 1820687712, inode 562949953532150): 8 files, no impossibilities so far.
 # C:/devkitPro/libctru/include/3ds/allocator (device 1820687712, inode 281474976860685): 5 files, 3 impossibilities.
 # C:/devkitPro/libctru/include/c3d (device 1820687712, inode 281474976860791): 18 files, 16 impossibilities.
 # C:/devkitPro/libctru/include/3ds/services (device 1820687712, inode 281474976860718): 47 files, 45 impossibilities.
@@ -389,16 +393,18 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 # C:/devkitPro/libctru/include/3ds/applets (device 1820687712, inode 281474976860689): 5 files, 3 impossibilities.
 # /home/Tobi/D7-Menu/RenderD7/external (device 1820687712, inode 562949953532354): 9 files, 2 impossibilities.
 # . (device 1820687712, inode 2251799813790130): 42 files, no impossibilities.
+ 
 # /home/Tobi/D7-Menu/RenderD7/internal (device 1820687712, inode 562949953532364): 15 files, no impossibilities.
 # /home/Tobi/D7-Menu/source/gui: could not be stat'd.
 # /home/Tobi/D7-Menu/test: could not be stat'd.
 # /home/Tobi/D7-Menu/assets/gfx (device 1820687712, inode 562949953532159): 3 files, no impossibilities.
 # C:/devkitPro/libctru/include/c2d (device 1820687712, inode 281474976860816): 7 files, 5 impossibilities.
+# /home/Tobi/D7-Menu (device 1820687712, inode 562949953532093): No files, no impossibilities so far.
 # /home/Tobi/D7-Menu/source (device 1820687712, inode 562949953532178): 8 files, no impossibilities.
 # C:/devkitPro/libctru/include/sys (device 1820687712, inode 281474976860780): 5 files, 1 impossibilities.
 # C:/devkitPro/libctru/include/netinet (device 1820687712, inode 281474976860776): 4 files, 1 impossibilities.
 
-# 320 files, 111 impossibilities in 26 directories.
+# 328 files, 111 impossibilities in 29 directories.
 
 # Implicit Rules
 
@@ -505,6 +511,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 
 %.elf:
 #  recipe to execute (from '/opt/devkitpro/devkitARM/3ds_rules', line 41):
+ 
 	$(SILENTMSG) linking $(notdir $@)
 	$(SILENTCMD)$(LD) $(LDFLAGS) $(OFILES) $(LIBPATHS) $(LIBS) -o $@
 	$(SILENTCMD)$(NM) -CSn $@ > $(notdir $*.lst)
@@ -584,6 +591,13 @@ C:/devkitPro/libctru/include/3ds/thread.h:
 #  File has been updated.
 #  Successfully updated.
 
+# Not a target:
+/home/Tobi/D7-Menu/app/icon.png:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 02:26:05.4983749
+#  File has been updated.
+#  Successfully updated.
+
 C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 02:27:17.6469274
@@ -609,6 +623,7 @@ C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp:
 #  Successfully updated.
 
 # Not a target:
+ 
 /home/Tobi/D7-Menu/build/mainMenu.d:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 05:12:47.6080456
@@ -689,11 +704,9 @@ C:/devkitPro/libctru/include/3ds/gpu/gx.h:
 
 /home/Tobi/D7-Menu/D7-Menu.cia: /home/Tobi/D7-Menu/D7-Menu.elf /home/Tobi/D7-Menu/D7-Menu.smdh
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-08 05:13:01.0159779
+#  Last modified 2022-05-08 05:40:07.1106188
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+#  Successfully updated.
 #  recipe to execute (from '/home/Tobi/D7-Menu/Makefile', line 254):
 	$(BANNERTOOL) makebanner -i "../app/banner.png" -a "../app/BannerAudio.wav" -o "../app/banner.bin"
 	$(BANNERTOOL) makesmdh -i "../app/icon.png" -s "$(TARGET)" -l "$(APP_DESCRIPTION)" -p "$(APP_AUTHOR)" -o "../app/icon.bin"
@@ -710,6 +723,7 @@ C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 02:27:17.6302489
 #  File has been updated.
+ 
 #  Successfully updated.
 
 C:/devkitPro/libctru/include/c3d/fog.h:
@@ -725,30 +739,19 @@ C:/devkitPro/libctru/include/c3d/fog.h:
 #  File has been updated.
 #  Successfully updated.
 
+# Not a target:
+/home/Tobi/D7-Menu/RenderD7/external/fs.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 02:27:17.6302489
+#  File has been updated.
+#  Successfully updated.
+
 TitleManager.o: /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'TitleManager'
-#  Last modified 2022-05-08 05:12:57.5082545
+#  Last modified 2022-05-08 05:40:02.4569751
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := TitleManager.o
-# automatic
-# * := TitleManager
-# automatic
-# < := /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp
-# automatic
-# + := /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp
-# automatic
-# % := 
-# automatic
-# ^ := /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp
-# automatic
-# ? := /home/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/21=14%
+#  Successfully updated.
 #  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
 	$(SILENTMSG) $(notdir $<)
 	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
@@ -770,10 +773,15 @@ lodepng.o: /home/Tobi/D7-Menu/RenderD7/external/lodepng.cpp C:/Users/Tobi/D7-Men
 #  File has been updated.
 #  Successfully updated.
 
-smdh.o: C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+smdh.o: /home/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'smdh'
+#  Last modified 2022-05-08 05:12:54.3839443
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
 
 C:/devkitPro/libctru/include/3ds/gpu/gpu.h:
 #  Implicit rule search has been done.
@@ -807,11 +815,11 @@ C:/devkitPro/libctru/include/3ds/applets/swkbd.h:
 
 # Not a target:
 C:/Users/Tobi/D7-Menu/source/main.cpp:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 03:34:31.5753323
 #  File has been updated.
 #  Successfully updated.
- 
 
 C:/devkitPro/libctru/include/3ds/services/fspxi.h:
 #  Implicit rule search has been done.
@@ -928,6 +936,7 @@ C:/devkitPro/libctru/include/3ds/applets/miiselector.h:
 # Not a target:
 /home/Tobi/D7-Menu/build/lang.d:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-05-08 05:12:40.2604966
 #  File has been updated.
 #  Successfully updated.
@@ -1022,6 +1031,7 @@ C:/devkitPro/libctru/include/c3d/base.h:
 
 C:/devkitPro/libctru/include/3ds.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
 #  Successfully updated.
@@ -1035,7 +1045,6 @@ C:/devkitPro/libctru/include/3ds/env.h:
 # Not a target:
 /opt/devkitpro/devkitARM/base_rules:
 #  Implicit rule search has been done.
- 
 #  Last modified 2020-07-28 04:27:14
 #  File has been updated.
 #  Successfully updated.
@@ -1097,10 +1106,15 @@ C:/devkitPro/libctru/include/3ds/services/apt.h:
 #  File has been updated.
 #  Successfully updated.
 
-fs.o: C:/Users/Tobi/D7-Menu/RenderD7/external/fs.c C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+fs.o: /home/Tobi/D7-Menu/RenderD7/external/fs.c C:/Users/Tobi/D7-Menu/RenderD7/external/fs.c C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'fs'
+#  Last modified 2022-05-08 05:12:58.1279151
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 84):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@ $(ERROR_FILTER)
 
 C:/devkitPro/libctru/include/3ds/services/ndm.h:
 #  Implicit rule search has been done.
@@ -1110,6 +1124,7 @@ C:/devkitPro/libctru/include/3ds/services/ndm.h:
 
 # Not a target:
 /home/Tobi/D7-Menu/build/thread.d:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 05:12:40.9086481
 #  File has been updated.
@@ -1166,7 +1181,6 @@ C:/devkitPro/libctru/include/3ds/services/am.h:
 #  Last modified 2022-05-08 05:12:54.3647241
 #  File has been updated.
 #  Successfully updated.
- 
 
 C:/devkitPro/libctru/include/c3d/texenv.h:
 #  Implicit rule search has been done.
@@ -1176,9 +1190,10 @@ C:/devkitPro/libctru/include/c3d/texenv.h:
 
 # Not a target:
 C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 04:41:57.9069454
+#  File has been updated.
+#  Successfully updated.
 
 C:/devkitPro/libctru/include/3ds/services/ns.h:
 #  Implicit rule search has been done.
@@ -1189,7 +1204,7 @@ C:/devkitPro/libctru/include/3ds/services/ns.h:
 # Not a target:
 /home/Tobi/D7-Menu/build/sdmenuv2.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 05:12:49.2885834
+#  Last modified 2022-05-08 05:39:59.8001891
 #  File has been updated.
 #  Successfully updated.
 
@@ -1231,7 +1246,15 @@ C:/devkitPro/libctru/include/3ds/ipc.h:
 # Not a target:
 C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.cpp:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-05-08 02:27:17.6352501
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/Tobi/D7-Menu/D7-Menu-Core/cache.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 04:10:14.7897009
 #  File has been updated.
 #  Successfully updated.
 
@@ -1241,15 +1264,18 @@ C:/Users/Tobi/D7-Menu/source/progressbar.hpp:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-/home/Tobi/D7-Menu/D7-Menu.smdh:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/Tobi/D7-Menu/D7-Menu.smdh: /home/Tobi/D7-Menu/app/icon.png /home/Tobi/D7-Menu/Makefile /opt/devkitpro/devkitARM/3ds_rules /opt/devkitpro/devkitARM/base_rules /opt/devkitpro/devkitARM/base_tools
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '/home/Tobi/D7-Menu/D7-Menu'
+#  Last modified 2022-05-08 05:12:58.6143196
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/3ds_rules', line 31):
+	$(SILENTCMD)smdhtool --create "$(APP_TITLE)" "$(APP_DESCRIPTION)" "$(APP_AUTHOR)" $(APP_ICON) $@
+	$(SILENTMSG) built ... $(notdir $@)
 
 C:/devkitPro/libctru/include/3ds/services/mic.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
 #  Successfully updated.
@@ -1287,11 +1313,9 @@ C:/devkitPro/libctru/include/3ds/exheader.h:
 /home/Tobi/D7-Menu/D7-Menu.elf: log.o renderd7.o sound.o Clock.o Time.o lang.o thread.o lodepng.o main.o pgrbar.o mainMenu.o sdmenuv2.o splash.o Title.o TitleManager.o cache.o smdh.o utils.o fs.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '/home/Tobi/D7-Menu/D7-Menu'
-#  Last modified 2022-05-08 05:12:58.4585058
+#  Last modified 2022-05-08 05:40:02.9383474
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+#  Successfully updated.
 #  recipe to execute (from '/opt/devkitpro/devkitARM/3ds_rules', line 41):
 	$(SILENTMSG) linking $(notdir $@)
 	$(SILENTCMD)$(LD) $(LDFLAGS) $(OFILES) $(LIBPATHS) $(LIBS) -o $@
@@ -1318,8 +1342,8 @@ C:/devkitPro/libctru/include/3ds/services/hid.h:
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
 #  Successfully updated.
- 
 
+ 
 splash.o: /home/Tobi/D7-Menu/source/scenes/splash.cpp C:/Users/Tobi/D7-Menu/source/scenes/splash.cpp C:/Users/Tobi/D7-Menu/source/scenes/mainMenu.hpp C:/Users/Tobi/D7-Menu/source/common.hpp C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/source/colors.hpp C:/Users/Tobi/D7-Menu/source/scenes/splash.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'splash'
@@ -1372,9 +1396,7 @@ all: /home/Tobi/D7-Menu/D7-Menu.cia /home/Tobi/D7-Menu/D7-Menu.elf /home/Tobi/D7
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+#  Successfully updated.
 
 C:/Users/Tobi/D7-Menu/source/scenes/sdmenuv2.hpp:
 #  Implicit rule search has been done.
@@ -1420,22 +1442,34 @@ C:/devkitPro/libctru/include/3ds/types.h:
 #  Successfully updated.
 
 # Not a target:
+ 
 /home/Tobi/D7-Menu/source/scenes/mainMenu.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 04:44:56.0179243
 #  File has been updated.
 #  Successfully updated.
 
-cache.o: C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cache.o: /home/Tobi/D7-Menu/D7-Menu-Core/cache.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cache'
+#  Last modified 2022-05-08 05:12:54.1136618
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
 
 # Not a target:
 /home/Tobi/D7-Menu/build/lodepng.d:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-05-08 05:12:43.058221
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/Tobi/D7-Menu/D7-Menu-Core/smdh.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 04:41:57.9069454
 #  File has been updated.
 #  Successfully updated.
 
@@ -1472,9 +1506,10 @@ C:/devkitPro/libctru/include/c3d/attribs.h:
 
 # Not a target:
 C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 02:27:17.5509594
+#  File has been updated.
+#  Successfully updated.
 
 Clock.o: /home/Tobi/D7-Menu/RenderD7/internal/Clock.cpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.cpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp
 #  Implicit rule search has been done.
@@ -1515,6 +1550,7 @@ C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h:
 C:/Users/Tobi/D7-Menu/RenderD7/renderd7.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-08 03:16:58.8382749
+ 
 #  File has been updated.
 #  Successfully updated.
 
@@ -1592,7 +1628,6 @@ C:/Users/Tobi/D7-Menu/RenderD7/log.hpp:
 #  Successfully updated.
 
 C:/devkitPro/libctru/include/3ds/util/utf.h:
- 
 #  Implicit rule search has been done.
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
@@ -1611,10 +1646,11 @@ pgrbar.o: /home/Tobi/D7-Menu/source/pgrbar.cpp C:/Users/Tobi/D7-Menu/source/pgrb
 # Not a target:
 C:/Users/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 05:09:10.3501185
+#  Last modified 2022-05-08 05:39:44.8861663
 #  File has been updated.
 #  Successfully updated.
 
+ 
 C:/devkitPro/libctru/include/c3d/lightlut.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-01-29 00:02:14
@@ -1704,7 +1740,7 @@ C:/devkitPro/libctru/include/3ds/console.h:
 # Not a target:
 /home/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 05:09:10.3501185
+#  Last modified 2022-05-08 05:39:44.8861663
 #  File has been updated.
 #  Successfully updated.
 
@@ -1717,8 +1753,7 @@ C:/devkitPro/libctru/include/3ds/util/decompress.h:
 # Not a target:
 /home/Tobi/D7-Menu/build/TitleManager.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 05:12:57.3945343
- 
+#  Last modified 2022-05-08 05:40:02.3525992
 #  File has been updated.
 #  Successfully updated.
 
@@ -1766,6 +1801,7 @@ C:/devkitPro/libctru/include/sys/socket.h:
 #  Successfully updated.
 
 C:/devkitPro/libctru/include/3ds/applets/error.h:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
@@ -1780,7 +1816,7 @@ C:/devkitPro/libctru/include/netinet/in.h:
 sdmenuv2.o: /home/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp C:/Users/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp C:/Users/Tobi/D7-Menu/source/scenes/sdmenuv2.hpp C:/Users/Tobi/D7-Menu/source/common.hpp C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/source/colors.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/TitleManager.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/Users/Tobi/D7-Menu/source/scenes/mainMenu.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'sdmenuv2'
-#  Last modified 2022-05-08 05:12:49.3422942
+#  Last modified 2022-05-08 05:40:00.0443268
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
@@ -1789,15 +1825,20 @@ sdmenuv2.o: /home/Tobi/D7-Menu/source/scenes/sdmenuv2.cpp C:/Users/Tobi/D7-Menu/
 
 # Not a target:
 C:/Users/Tobi/D7-Menu/D7-Menu-Core/cache.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 04:10:14.7897009
+#  File has been updated.
+#  Successfully updated.
 
-# Not a target:
-/home/Tobi/D7-Menu/D7-Menu.3dsx:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/Tobi/D7-Menu/D7-Menu.3dsx: /home/Tobi/D7-Menu/D7-Menu.elf
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '/home/Tobi/D7-Menu/D7-Menu'
+#  Last modified 2022-05-08 05:40:07.1476386
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/3ds_rules', line 36):
+	$(SILENTCMD)3dsxtool $< $@ $(_3DSXFLAGS)
+	$(SILENTMSG) built ... $(notdir $@)
 
 # Not a target:
 /home/Tobi/D7-Menu/build/Title.d:
@@ -1827,6 +1868,7 @@ C:/devkitPro/libctru/include/3ds/result.h:
 renderd7.o: /home/Tobi/D7-Menu/RenderD7/renderd7.cpp C:/Users/Tobi/D7-Menu/RenderD7/renderd7.cpp C:/Users/Tobi/D7-Menu/RenderD7/renderd7.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/RenderD7/external/lodepng.h C:/Users/Tobi/D7-Menu/RenderD7/internal/lang.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/json.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/parameter.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/thread.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/ini.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/stringtool.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp C:/Users/Tobi/D7-Menu/RenderD7/internal/Time.hpp C:/Users/Tobi/D7-Menu/RenderD7/external/fs.h C:/Users/Tobi/D7-Menu/RenderD7/log.hpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'renderd7'
+ 
 #  Last modified 2022-05-08 05:12:37.3798333
 #  File has been updated.
 #  Successfully updated.
@@ -1840,14 +1882,18 @@ C:/Users/Tobi/D7-Menu/RenderD7/internal/Clock.hpp:
 #  File has been updated.
 #  Successfully updated.
 
-utils.o: C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+utils.o: /home/Tobi/D7-Menu/D7-Menu-Core/utils.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'utils'
+#  Last modified 2022-05-08 05:12:57.8589919
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
 
 C:/devkitPro/libctru/include/3ds/services/pxipm.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-01-27 00:17:39
 #  File has been updated.
 #  Successfully updated.
@@ -1899,10 +1945,18 @@ C:/devkitPro/libctru/include/3ds/mii.h:
 #  Successfully updated.
 
 # Not a target:
+/home/Tobi/D7-Menu/D7-Menu-Core/utils.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 02:27:17.5509594
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
 C:/Users/Tobi/D7-Menu/RenderD7/external/fs.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 02:27:17.6302489
+#  File has been updated.
+#  Successfully updated.
 
 C:/devkitPro/libctru/include/citro3d.h:
 #  Implicit rule search has been done.
@@ -1923,12 +1977,12 @@ C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp:
 #  Successfully updated.
 
 Title.o: /home/Tobi/D7-Menu/D7-Menu-Core/Title.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/Title.cpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/title.hpp C:/devkitPro/libctru/include/3ds.h C:/devkitPro/libctru/include/3ds/types.h C:/devkitPro/libctru/include/3ds/result.h C:/devkitPro/libctru/include/3ds/ipc.h C:/devkitPro/libctru/include/3ds/svc.h C:/devkitPro/libctru/include/3ds/exheader.h C:/devkitPro/libctru/include/3ds/srv.h C:/devkitPro/libctru/include/3ds/errf.h C:/devkitPro/libctru/include/3ds/os.h C:/devkitPro/libctru/include/3ds/synchronization.h C:/devkitPro/libctru/include/3ds/thread.h C:/devkitPro/libctru/include/3ds/gfx.h C:/devkitPro/libctru/include/3ds/services/gspgpu.h C:/devkitPro/libctru/include/3ds/console.h C:/devkitPro/libctru/include/3ds/env.h C:/devkitPro/libctru/include/3ds/util/decompress.h C:/devkitPro/libctru/include/3ds/util/utf.h C:/devkitPro/libctru/include/3ds/allocator/linear.h C:/devkitPro/libctru/include/3ds/allocator/mappable.h C:/devkitPro/libctru/include/3ds/allocator/vram.h C:/devkitPro/libctru/include/3ds/services/ac.h C:/devkitPro/libctru/include/3ds/services/am.h C:/devkitPro/libctru/include/3ds/services/fs.h C:/devkitPro/libctru/include/3ds/services/ampxi.h C:/devkitPro/libctru/include/3ds/services/apt.h C:/devkitPro/libctru/include/3ds/services/boss.h C:/devkitPro/libctru/include/3ds/services/cam.h C:/devkitPro/libctru/include/3ds/services/y2r.h C:/devkitPro/libctru/include/3ds/services/cfgnor.h C:/devkitPro/libctru/include/3ds/services/cfgu.h C:/devkitPro/libctru/include/3ds/services/csnd.h C:/devkitPro/libctru/include/3ds/services/dsp.h C:/devkitPro/libctru/include/3ds/services/fspxi.h C:/devkitPro/libctru/include/3ds/services/fsreg.h C:/devkitPro/libctru/include/3ds/services/frd.h C:/devkitPro/libctru/include/3ds/mii.h C:/devkitPro/libctru/include/3ds/services/gsplcd.h C:/devkitPro/libctru/include/3ds/services/hid.h C:/devkitPro/libctru/include/3ds/services/irrst.h C:/devkitPro/libctru/include/3ds/services/sslc.h C:/devkitPro/libctru/include/3ds/services/httpc.h C:/devkitPro/libctru/include/3ds/services/uds.h C:/devkitPro/libctru/include/3ds/services/ndm.h C:/devkitPro/libctru/include/3ds/services/nim.h C:/devkitPro/libctru/include/3ds/services/nwmext.h C:/devkitPro/libctru/include/3ds/services/ir.h C:/devkitPro/libctru/include/3ds/services/ns.h C:/devkitPro/libctru/include/3ds/services/pmapp.h C:/devkitPro/libctru/include/3ds/services/pmdbg.h C:/devkitPro/libctru/include/3ds/services/ps.h C:/devkitPro/libctru/include/3ds/services/ptmu.h C:/devkitPro/libctru/include/3ds/services/ptmsysm.h C:/devkitPro/libctru/include/3ds/services/ptmgets.h C:/devkitPro/libctru/include/3ds/services/ptmsets.h C:/devkitPro/libctru/include/3ds/services/pxidev.h C:/devkitPro/libctru/include/3ds/services/pxipm.h C:/devkitPro/libctru/include/3ds/services/soc.h C:/devkitPro/libctru/include/netinet/in.h C:/devkitPro/libctru/include/sys/socket.h C:/devkitPro/libctru/include/3ds/services/mic.h C:/devkitPro/libctru/include/3ds/services/mvd.h C:/devkitPro/libctru/include/3ds/services/nfc.h C:/devkitPro/libctru/include/3ds/services/news.h C:/devkitPro/libctru/include/3ds/services/qtm.h C:/devkitPro/libctru/include/3ds/services/srvpm.h C:/devkitPro/libctru/include/3ds/services/loader.h C:/devkitPro/libctru/include/3ds/services/mcuhwc.h C:/devkitPro/libctru/include/3ds/gpu/gx.h C:/devkitPro/libctru/include/3ds/gpu/gpu.h C:/devkitPro/libctru/include/3ds/gpu/registers.h C:/devkitPro/libctru/include/3ds/gpu/enums.h C:/devkitPro/libctru/include/3ds/gpu/shbin.h C:/devkitPro/libctru/include/3ds/gpu/shaderProgram.h C:/devkitPro/libctru/include/3ds/ndsp/ndsp.h C:/devkitPro/libctru/include/3ds/ndsp/channel.h C:/devkitPro/libctru/include/3ds/applets/swkbd.h C:/devkitPro/libctru/include/3ds/applets/error.h C:/devkitPro/libctru/include/3ds/applets/miiselector.h C:/devkitPro/libctru/include/3ds/archive.h C:/devkitPro/libctru/include/3ds/romfs.h C:/devkitPro/libctru/include/3ds/font.h C:/devkitPro/libctru/include/3ds/gdbhio_dev.h C:/devkitPro/libctru/include/3ds/3dslink.h C:/devkitPro/libctru/include/citro2d.h C:/devkitPro/libctru/include/citro3d.h C:/devkitPro/libctru/include/c3d/types.h C:/devkitPro/libctru/include/c3d/maths.h C:/devkitPro/libctru/include/c3d/mtxstack.h C:/devkitPro/libctru/include/c3d/uniforms.h C:/devkitPro/libctru/include/c3d/attribs.h C:/devkitPro/libctru/include/c3d/buffers.h C:/devkitPro/libctru/include/c3d/base.h C:/devkitPro/libctru/include/c3d/texenv.h C:/devkitPro/libctru/include/c3d/effect.h C:/devkitPro/libctru/include/c3d/texture.h C:/devkitPro/libctru/include/c3d/proctex.h C:/devkitPro/libctru/include/c3d/light.h C:/devkitPro/libctru/include/c3d/lightlut.h C:/devkitPro/libctru/include/c3d/fog.h C:/devkitPro/libctru/include/c3d/framebuffer.h C:/devkitPro/libctru/include/c3d/renderqueue.h C:/devkitPro/libctru/include/tex3ds.h C:/devkitPro/libctru/include/c2d/base.h C:/devkitPro/libctru/include/c2d/spritesheet.h C:/devkitPro/libctru/include/c2d/sprite.h C:/devkitPro/libctru/include/c2d/text.h C:/devkitPro/libctru/include/c2d/font.h C:/Users/Tobi/D7-Menu/D7-Menu-Core/smdh.hpp C:/Users/Tobi/D7-Menu/D7-Menu-Core/utils.hpp C:/Users/Tobi/D7-Menu/RenderD7/log.hpp
+ 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'Title'
 #  Last modified 2022-05-08 05:12:55.1735859
 #  File has been updated.
 #  Successfully updated.
- 
 #  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
 	$(SILENTMSG) $(notdir $<)
 	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
@@ -1990,7 +2044,7 @@ thread.o: /home/Tobi/D7-Menu/RenderD7/internal/thread.cpp C:/Users/Tobi/D7-Menu/
 	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
 
 # files hash-table stats:
-# Load=216/1024=21%, Rehash=0, Collisions=525/4037=13%
+# Load=221/1024=22%, Rehash=0, Collisions=558/4161=13%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -1998,15 +2052,15 @@ thread.o: /home/Tobi/D7-Menu/RenderD7/internal/thread.cpp C:/Users/Tobi/D7-Menu/
 # General ('VPATH' variable) search path:
 # /home/Tobi/D7-Menu/test:/home/Tobi/D7-Menu/test/decoder:/home/Tobi/D7-Menu/RenderD7:/home/Tobi/D7-Menu/RenderD7/internal:/home/Tobi/D7-Menu/RenderD7/external:/home/Tobi/D7-Menu/source:/home/Tobi/D7-Menu/source/gui:/home/Tobi/D7-Menu/source/scenes:/home/Tobi/D7-Menu/D7-Menu-Core:/home/Tobi/D7-Menu/assets/gfx:/home/Tobi/D7-Menu/data
 
-# strcache buffers: 3 (0) / strings = 718 / storage = 18060 B / avg = 25 B
-# current buf: size = 8162 B / used = 1809 B / count = 66 / avg = 27 B
+# strcache buffers: 3 (0) / strings = 736 / storage = 18391 B / avg = 24 B
+# current buf: size = 8162 B / used = 2140 B / count = 84 / avg = 25 B
 # other used: total = 16251 B / count = 652 / avg = 24 B
 # other free: total = 73 B / max = 37 B / min = 36 B / avg = 36 B
 
-# strcache performance: lookups = 5743 / hit rate = 87%
+# strcache performance: lookups = 5789 / hit rate = 87%
 # hash-table stats:
-# Load=718/8192=9%, Rehash=0, Collisions=135/5743=2%
-# Finished Make data base on Sun May  8 05:39:22 2022
+# Load=736/8192=9%, Rehash=0, Collisions=135/5789=2%
+# Finished Make data base on Mon May  9 15:18:05 2022
 
  
 # GNU Make 4.3
@@ -2018,13 +2072,11 @@ thread.o: /home/Tobi/D7-Menu/RenderD7/internal/thread.cpp C:/Users/Tobi/D7-Menu/
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sun May  8 05:39:22 2022
+# Make data base, printed on Mon May  9 15:18:05 2022
 
 # Variables
-
  
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+
 # makefile (from 'Makefile', line 39)
 MAKEROM = makerom.exe
 # environment
@@ -2048,7 +2100,7 @@ OFILES :=    log.o renderd7.o sound.o Clock.o Time.o lang.o thread.o lodepng.o m
 # environment
 LOCALAPPDATA = C:\Users\Tobi\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2e398ab4-6805-4bc4-bc3d-a25bf7b3f02d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c678be43-ea6b-48a2-8116-36f258cd9629-sock
 # makefile (from 'Makefile', line 132)
 VPATH := /home/Tobi/D7-Menu/test /home/Tobi/D7-Menu/test/decoder /home/Tobi/D7-Menu/RenderD7 /home/Tobi/D7-Menu/RenderD7/internal /home/Tobi/D7-Menu/RenderD7/external /home/Tobi/D7-Menu/source /home/Tobi/D7-Menu/source/gui /home/Tobi/D7-Menu/source/scenes /home/Tobi/D7-Menu/D7-Menu-Core /home/Tobi/D7-Menu/assets/gfx /home/Tobi/D7-Menu/data
 # makefile (from 'Makefile', line 138)
@@ -2074,11 +2126,9 @@ OFILES_BIN := $(subst ,,  )
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2036_XUNNKCRXQVBNYMYT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14160_GDZTHOEYDCQDELRE
 # makefile (from 'Makefile', line 139)
 CPPFILES :=   log.cpp renderd7.cpp sound.cpp Clock.cpp Time.cpp lang.cpp thread.cpp lodepng.cpp main.cpp pgrbar.cpp  mainMenu.cpp sdmenuv2.cpp splash.cpp Title.cpp TitleManager.cpp cache.cpp smdh.cpp utils.cpp
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -2096,6 +2146,7 @@ VSCODE_CODE_CACHE_PATH = C:\Users\Tobi\AppData\Roaming\Code\CachedData\57fd6d019
 # environment
 LANG = C
 # default
+ 
 .LOADED := 
 # environment
 TMP = /home/Tobi/AppData/Local/Temp
@@ -2112,7 +2163,6 @@ ONEDRIVE = C:\Users\Tobi\OneDrive
 # environment
 DEVKITARM = /opt/devkitpro/devkitARM
 # makefile
- 
 CURDIR := /home/Tobi/D7-Menu
 # environment
 VSCODE_PIPE_LOGGING = true
@@ -2147,7 +2197,7 @@ ASFLAGS := -g -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2036
+VSCODE_PID = 14160
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 28)
@@ -2174,11 +2224,14 @@ APP_ICON := /home/Tobi/D7-Menu/app/icon.png
 CTRULIB = $(DEVKITPRO)/libctru
 # makefile (from 'Makefile', line 183)
 INCLUDE := -I/home/Tobi/D7-Menu/test -I/home/Tobi/D7-Menu/test/decoder -I/home/Tobi/D7-Menu/RenderD7 -I/home/Tobi/D7-Menu/RenderD7/internal -I/home/Tobi/D7-Menu/RenderD7/external -I/home/Tobi/D7-Menu/source -I/home/Tobi/D7-Menu/source/gui -I/home/Tobi/D7-Menu/source/scenes -I/home/Tobi/D7-Menu/D7-Menu-Core -I/opt/devkitpro/portlibs/3ds/include -I/opt/devkitpro/libctru/include -I/home/Tobi/D7-Menu/build
+# environment
+ONEDRIVECONSUMER = C:\Users\Tobi\OneDrive
 # default
 MAKE_HOST := x86_64-pc-msys
 # environment
 PROGRAMDATA = C:\ProgramData
 # default
+ 
 SHELL := /bin/sh
 # environment
 HOMEPATH = \Users\Tobi
@@ -2203,7 +2256,6 @@ MAKE = $(MAKE_COMMAND)
 # makefile (from 'Makefile', line 142)
 SHLISTFILES := $(subst ,,        )
 # makefile (from '/opt/devkitpro/devkitARM/3ds_rules', line 9)
- 
 PATH := /opt/devkitpro/portlibs/3ds/bin:/opt/devkitpro/tools/bin:/opt/devkitpro/devkitARM/bin:/opt/devkitpro/msys2/usr/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Windows/System32/OpenSSH:/c/Program Files/Git/cmd:/opt/devkitpro/tools/bin:/home/Tobi/AppData/Local/Microsoft/WindowsApps:/home/Tobi/AppData/Local/Programs/Microsoft VS Code/bin
 # environment
 COMPUTERNAME = PC
@@ -2240,6 +2292,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 DEVKITPRO = /opt/devkitpro
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 4)
+ 
 UNAME_S := MSYS_NT-10.0-19044
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
@@ -2286,12 +2339,11 @@ ISVC = $(or $(VCBUILDHELPER_COMMAND),$(MSBUILDEXTENSIONSPATH32),$(MSBUILDEXTENSI
 # environment
 PUBLIC = C:\Users\Public
 # makefile (from 'Makefile', line 92)
- 
 BNR_AUDIO := app/BannerAudio.wav
 # environment
 APPDATA = C:\Users\Tobi\AppData\Roaming
 # makefile (from 'Makefile', line 106)
-CFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"43c17af\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft  -D__3DS__ -D_GNU_SOURCE=1
+CFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"8808bce\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft  -D__3DS__ -D_GNU_SOURCE=1
 # environment
 HOMEDRIVE = C:
 # makefile (from 'Makefile', line 79)
@@ -2341,15 +2393,16 @@ LD := arm-none-eabi-g++
 # environment
 SESSIONNAME = Console
 # makefile (from 'Makefile', line 52)
-GIT_VER := 43c17af
+GIT_VER := 8808bce
 # makefile (from 'Makefile', line 108)
-CXXFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"43c17af\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft  -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17
+CXXFLAGS := -g -Wall -Wno-psabi -O2 -mword-relocations -DV_STRING=\"8808bce\" -fomit-frame-pointer -ffunction-sections -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft  -D__3DS__ -D_GNU_SOURCE=1 -fno-rtti -fno-exceptions -std=gnu++17
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 26)
 STRIP := arm-none-eabi-strip
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
 PROCESSOR_REVISION = 2100
+ 
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 22)
 CXX := arm-none-eabi-g++
 # makefile (from '/opt/devkitpro/devkitARM/base_tools', line 21)
@@ -2371,12 +2424,11 @@ _3DSXDEPS := /home/Tobi/D7-Menu/D7-Menu.smdh
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=172/1024=17%, Rehash=0, Collisions=37/409=9%
+# Load=171/1024=17%, Rehash=0, Collisions=35/408=9%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
@@ -2437,6 +2489,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 %.thumb.o: %.thumb.c
 #  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 38):
 	$(SILENTMSG) $(notdir $<)
+ 
 	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.thumb.d $(CFLAGS) -mthumb -c $< -o $@ $(ERROR_FILTER)
 
 %.thumb.o: %.thumb.m
@@ -2475,7 +2528,6 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD
 	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.itcm.d $(OBJCFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
 
 %.o: %.cpp
- 
 #  recipe to execute (from '/opt/devkitpro/devkitARM/base_rules', line 79):
 	$(SILENTMSG) $(notdir $<)
 	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
@@ -2527,7 +2579,7 @@ romfs/gfx/%.t3x build/%.h: %.t3s
 # Not a target:
 /home/Tobi/D7-Menu/build:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-08 05:12:58.5053845
+#  Last modified 2022-05-08 05:40:02.3807216
 #  File has been updated.
 #  Successfully updated.
 
@@ -2578,11 +2630,11 @@ cia: build
 
 # Not a target:
 .DEFAULT:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 all: build romfs/gfx /home/Tobi/D7-Menu/build
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
@@ -2590,7 +2642,7 @@ all: build romfs/gfx /home/Tobi/D7-Menu/build
 #  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # automatic
 # @ := all
 # automatic
@@ -2614,7 +2666,7 @@ all: build romfs/gfx /home/Tobi/D7-Menu/build
 
 build:
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-08 05:12:58.5053845
+#  Last modified 2022-05-08 05:40:02.3807216
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 241):
@@ -2645,7 +2697,7 @@ romfs/gfx:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/40=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -2659,6 +2711,6 @@ romfs/gfx:
 # strcache performance: lookups = 216 / hit rate = 34%
 # hash-table stats:
 # Load=141/8192=2%, Rehash=0, Collisions=5/216=2%
-# Finished Make data base on Sun May  8 05:39:22 2022
+# Finished Make data base on Mon May  9 15:18:05 2022
 
  

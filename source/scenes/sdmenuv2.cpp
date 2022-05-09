@@ -21,7 +21,7 @@ void SDMenu::Draw(void) const {
 	
 	RenderD7::DrawText(15, 55, 0.7f, BLACK, TitleManager::sdtitles[Selection]->name());
 	RenderD7::DrawText(15, 75, 0.7f, BLACK, TitleManager::sdtitles[Selection]->author(), 290);
-	RenderD7::DrawText(15, 130, 0.7f, BLACK, "Media: " + TitleManager::sdtitles[Selection]->MediaTP(), 290);
+	RenderD7::DrawText(15, 125, 0.7f, BLACK, "Media: " + TitleManager::sdtitles[Selection]->MediaTP(), 290);
 	RenderD7::DrawRect(303, 63, 76, 76, C2D_Color32(180, 180, 180, 255));
 	RenderD7::DrawImage(TitleManager::sdtitles[Selection]->icon(), 305, 65, 1.5, 1.5);
 
