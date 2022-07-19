@@ -64,6 +64,10 @@ void MainMenu::Logic(u32 hDown, u32 hHeld, u32 hUp, touchPosition touch) {
         }
      
 	}
+	if (hDown & KEY_Y) {
+		RenderD7::LoadSettings();
+     
+	}
 	if (d7_hDown & KEY_TOUCH && RenderD7::touchTLBtn(d7_touch, MMButtons[0]))
 	{
 		RenderD7::Scene::Load(std::make_unique<SDMenu>());
