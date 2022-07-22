@@ -10,7 +10,7 @@ void Stack::Draw(void) const {
 	RenderD7::DrawRect(0, 30, 400, 210, COOLWHITE);
 	 
 	RenderD7::DrawTextCentered(0, 2, 0.8f, WHITE, "D7-Menu", 400);
-	RenderD7::DrawTextCentered(0, 40, 0.8f, BLACK, "DSGameCards ar not supported yet.\n\nBefore removing a gamecard\n\ngo back to the MainMenu.", 400);
+	RenderD7::DrawTextCentered(0, 40, 0.8f, BLACK, "DSGameCards ar not supported yet.\n\nBefore removing a gamecard\n\ngo back to the MainMenu.\nPress Y to get Rd7 Settings", 400);
 	RenderD7::DrawTextCentered(0, 214, 0.8, BLACK, "Universal-Team, Tobi", 400);
 	RenderD7::OnScreen(Bottom);
 	RenderD7::DrawRect(0, 0, 320, 240, COOLWHITE);
