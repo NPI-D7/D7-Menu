@@ -76,7 +76,7 @@ endif
 #---------------------------------------------------------------------------------
 TARGET		:=	D7-Menu
 BUILD		:=	build
-UNIVCORE	:= 	RenderD7 RenderD7/internal RenderD7/external
+UNIVCORE	:= 	RenderD7 RenderD7/internal RenderD7/external RenderD7/external/libnsbmp
 
 SOURCES		:=	test test/decoder $(UNIVCORE) source source/gui source/scenes D7-Menu-Core 
 DATA		:=	data
