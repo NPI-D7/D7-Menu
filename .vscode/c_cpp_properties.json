@@ -4,7 +4,6 @@
             "name": "3DS | Windows",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/RenderD7/**",
                 "${workspaceFolder}/D7-Menu-Core/**",
                 "C:/devkitpro/libctru/include/**",
                 "C:/devkitpro/portlibs/3ds/include/**",
