@@ -76,9 +76,7 @@ endif
 #---------------------------------------------------------------------------------
 TARGET		:=	D7-Menu
 BUILD		:=	build
-UNIVCORE	:= 	RenderD7 RenderD7/internal RenderD7/external RenderD7/external/libnsbmp
-
-SOURCES		:=	test test/decoder $(UNIVCORE) source source/gui source/scenes D7-Menu-Core 
+SOURCES		:=	test test/decoder source source/gui source/scenes D7-Menu-Core 
 DATA		:=	data
 INCLUDES	:= $(SOURCES)
 GRAPHICS	:=	assets/gfx
@@ -110,7 +108,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++17
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=3dsx.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -larchive -lbz2 -llzma -lm -lz -lcitro2d -lcitro3d -lSDL_mixer -lSDL -lmpg123 -lvorbisidec -logg -lmikmod -lmad -lctru -lstdc++
+LIBS	:= -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -larchive -lbz2 -llzma -lm -lz -lrenderd7 -lcitro2d -lcitro3d -lSDL_mixer -lSDL -lmpg123 -lvorbisidec -logg -lmikmod -lmad -lctru -lstdc++
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing

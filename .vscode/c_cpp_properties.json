@@ -6,10 +6,10 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/RenderD7/**",
                 "${workspaceFolder}/D7-Menu-Core/**",
-                "/opt/devkitpro/libctru/include/**",
-                "/opt/devkitpro/portlibs/3ds/include/**",
-                "/opt/devkitpro/devkitARM/include/**",
-                "/opt/devkitpro/devkitARM/arm-none-eabi/include/**"
+                "C:/devkitpro/libctru/include/**",
+                "C:/devkitpro/portlibs/3ds/include/**",
+                "C:/devkitpro/devkitARM/include/**",
+                "C:/devkitpro/devkitARM/arm-none-eabi/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [],
