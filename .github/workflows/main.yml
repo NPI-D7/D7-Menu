@@ -29,9 +29,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install p7zip-full -y
-          curl -L https://github.com/NPI-D7/RenderD7/releases/download/v0.8.3-pre1/renderd7-0.8.3.tar.bz2 -o renderd7-0.8.3.tar.bz2
+          curl -L https://github.com/NPI-D7/RenderD7/releases/download/v0.8.4-pre1/renderd7-0.8.4.tar.bz2 -o renderd7-0.8.4.tar.bz2
           mkdir -p /opt/devkitpro/libctru
-          bzip2 -cd renderd7-0.8.3.tar.bz2 | tar -xf - -C /opt/devkitpro/libctru
+          bzip2 -cd renderd7-0.8.4.tar.bz2 | tar -xf - -C /opt/devkitpro/libctru
           curl -L https://github.com/Steveice10/bannertool/releases/download/1.2.0/bannertool.zip -o bannertool.zip
           sudo 7z e bannertool.zip linux-x86_64/bannertool
           sudo chmod +x bannertool
