@@ -25,7 +25,7 @@ void SDMenu::Draw(void) const {
   RenderD7::Draw::Rect(303, 63, 76, 76, C2D_Color32(180, 180, 180, 255));
   RenderD7::Draw::Image(TitleManager::sdtitles[Selection]->icon(), 305, 65, 1.5,
                         1.5);
-
+  
   RenderD7::OnScreen(Bottom);
   RenderD7::Draw::Rect(0, 0, 320, 240, COOLWHITE);
   RenderD7::Draw::Rect(0, 0, 320, 30, COOLDARK);
